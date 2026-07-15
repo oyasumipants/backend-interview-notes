@@ -3770,40 +3770,60 @@ func e()       { w := 5; go func(){ _ = w }() } // ⑤ 別goroutineが参照 →
     <p class="text-xs uppercase tracking-widest text-neutral-500">面接準備 / 理解ノート（Q20）</p>
     <h1 class="mt-2 text-3xl font-bold tracking-tight">SSR / SSG / ISR / RSC</h1>
     <p class="mt-3 text-neutral-600">「いつHTMLを作るか」で SSG・ISR・SSR を選び、RSC は「どこでレンダするか」の別の軸。更新頻度とパーソナライズ度で置き所を決める。</p>
+    <div class="mt-4 rounded-lg bg-neutral-100 p-4 text-xs text-neutral-600 grid sm:grid-cols-2 gap-x-6 gap-y-1">
+      <div><span class="font-semibold">SSG</span> = Static Site Generation（静的サイト生成）</div>
+      <div><span class="font-semibold">ISR</span> = Incremental Static Regeneration（増分的静的再生成）</div>
+      <div><span class="font-semibold">SSR</span> = Server-Side Rendering（サーバサイドレンダリング）</div>
+      <div><span class="font-semibold">RSC</span> = React Server Components</div>
+      <div><span class="font-semibold">CDN</span> = Content Delivery Network（コンテンツ配信網）</div>
+      <div><span class="font-semibold">SEO</span> = Search Engine Optimization（検索エンジン最適化）</div>
+    </div>
   </header>
 
-  <!-- 4つをざっくり -->
+  <!-- 全体像: 3方式 + 別軸RSC -->
   <section class="mb-14">
-    <h2 class="text-xl font-bold mb-1">まず4つを一言で</h2>
-    <p class="text-neutral-600 mb-5">SSG・ISR・SSR は生成タイミングの選択肢。RSC はそれとは別の軸（どこで描くか）。</p>
-    <div class="grid md:grid-cols-2 gap-4">
+    <h2 class="text-xl font-bold mb-1">まず全体像 — 比べるのは3方式、RSC は別物</h2>
+    <p class="text-neutral-600 mb-5"><span class="font-medium">SSG・ISR・SSR は「いつHTMLを作るか」の3択</span>で、この3つを並べて比べる。<span class="font-medium">RSC は「どこでコンポーネントを描くか」の別の軸</span>で、上の3つと同列には比べない。</p>
+
+    <p class="text-sm font-semibold text-neutral-700 mb-2">① 生成タイミングの3択（この3つを比べる）</p>
+    <div class="grid md:grid-cols-3 gap-4">
       <div class="rounded-xl border border-emerald-200 bg-white p-4">
         <div class="text-2xl mb-2">📦</div>
         <h3 class="font-bold text-emerald-700">SSG ＝ 作り置き</h3>
-        <p class="text-sm text-neutral-600 mt-2">build時にHTMLを生成して置いておき、CDNから最速で配る。中身は全員同じ。</p>
+        <p class="text-[11px] text-neutral-400 mt-0.5">Static Site Generation（静的サイト生成）</p>
+        <p class="text-sm text-neutral-600 mt-2">build時にHTMLを生成して置き、CDNから最速で配る。中身は全員同じ。</p>
       </div>
       <div class="rounded-xl border border-amber-200 bg-white p-4">
         <div class="text-2xl mb-2">🔁</div>
         <h3 class="font-bold text-amber-700">ISR ＝ 作り置き＋定期更新</h3>
-        <p class="text-sm text-neutral-600 mt-2">SSGを土台に、一定間隔 or on-demand で再生成（revalidate）。準静的で更新もある所に。</p>
+        <p class="text-[11px] text-neutral-400 mt-0.5">Incremental Static Regeneration（増分的静的再生成）</p>
+        <p class="text-sm text-neutral-600 mt-2">SSGを土台に、一定間隔か on-demand で再生成（revalidate）。準静的で更新もある所に。</p>
       </div>
       <div class="rounded-xl border border-indigo-200 bg-white p-4">
         <div class="text-2xl mb-2">🍳</div>
         <h3 class="font-bold text-indigo-700">SSR ＝ 注文ごとに調理</h3>
+        <p class="text-[11px] text-neutral-400 mt-0.5">Server-Side Rendering（サーバサイドレンダリング）</p>
         <p class="text-sm text-neutral-600 mt-2">リクエストごとにサーバで生成。ユーザー依存やリアルタイム性が要る所に向く。</p>
       </div>
-      <div class="rounded-xl border border-violet-200 bg-white p-4">
-        <div class="text-2xl mb-2">🧩</div>
-        <h3 class="font-bold text-violet-700">RSC ＝ サーバで描いてJSを送らない</h3>
-        <p class="text-sm text-neutral-600 mt-2">React Server Components。サーバでレンダしJSをクライアントに送らない→バンドル削減・データ取得をサーバで直接。App Routerの基盤。</p>
+    </div>
+
+    <p class="text-sm font-semibold text-neutral-700 mt-6 mb-2">② 別の軸 — どこで描くか（3方式と同列に比べない）</p>
+    <div class="rounded-xl border-2 border-dashed border-violet-300 bg-violet-50/50 p-4">
+      <div class="flex items-start gap-3">
+        <div class="text-2xl">🧩</div>
+        <div>
+          <h3 class="font-bold text-violet-700">RSC ＝ サーバで描いてJSを送らない</h3>
+          <p class="text-[11px] text-neutral-500 mt-0.5">React Server Components</p>
+          <p class="text-sm text-neutral-600 mt-2">サーバでコンポーネントをレンダしJSをクライアントに送らない → バンドル削減・データ取得をサーバで直接。App Router の基盤。<span class="font-medium">SSR 等と組み合わせて使う</span>もので、SSG/ISR/SSR のどれかを置き換えるものではない。</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 比較表 -->
   <section class="mb-14">
-    <h2 class="text-xl font-bold mb-1">4方式の比較</h2>
-    <p class="text-neutral-600 mb-5">「いつ生成するか」「更新にどう追従するか」「どんなページ向きか」で並べる。</p>
+    <h2 class="text-xl font-bold mb-1">生成タイミング3方式（SSG / ISR / SSR）の比較</h2>
+    <p class="text-neutral-600 mb-5">この表で比べるのは3方式だけ。「いつ生成するか」「更新にどう追従するか」「どんなページ向きか」で並べる。RSC は別軸なので入れていない。</p>
     <div class="overflow-hidden rounded-xl border border-neutral-200">
       <table class="w-full text-sm">
         <thead>
@@ -3832,12 +3852,6 @@ func e()       { w := 5; go func(){ _ = w }() } // ⑤ 別goroutineが参照 →
             <td class="px-4 py-3 text-neutral-600">リクエストごとにサーバ生成</td>
             <td class="px-4 py-3 text-neutral-600">毎回最新</td>
             <td class="px-4 py-3 text-neutral-600">ダッシュボード・検索結果</td>
-          </tr>
-          <tr class="bg-neutral-50">
-            <td class="px-4 py-3 font-medium text-violet-700">RSC</td>
-            <td class="px-4 py-3 text-neutral-600">サーバでレンダしJSを送らない</td>
-            <td class="px-4 py-3 text-neutral-400">—（描画の仕組み・別軸）</td>
-            <td class="px-4 py-3 text-neutral-600">App Router 全体の基盤</td>
           </tr>
         </tbody>
       </table>
