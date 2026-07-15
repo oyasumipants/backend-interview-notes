@@ -139,7 +139,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 <p class="text-xs uppercase tracking-widest text-neutral-500">study notes</p>
 <h1 class="mt-2 text-3xl font-bold tracking-tight">バックエンド / インフラ 知識ノート</h1>
 <p class="mt-3 text-neutral-600">Go・AWS/GCP・Next.js・システム設計・Web基礎の要点を、図解で1トピックずつ。</p>
-<div class="mt-4 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-neutral-900 text-white px-3 py-1">40 トピック</span><span class="rounded-full bg-neutral-200 text-neutral-700 px-3 py-1">図解＋理解度チェック</span></div>
+<div class="mt-4 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-neutral-900 text-white px-3 py-1">42 トピック</span><span class="rounded-full bg-neutral-200 text-neutral-700 px-3 py-1">図解＋理解度チェック</span></div>
 </header>
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">Go / 基礎</h2>
 <div class="grid sm:grid-cols-2 gap-3"><a href="#topic-container" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q3</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">コンテナ / VM / カーネル</h3><p class="text-sm text-neutral-500 mt-1">一軒家 vs シェアハウス・namespace・cgroup</p></a><a href="#topic-goroutine" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q7</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">goroutine と 並行/並列</h3><p class="text-sm text-neutral-500 mt-1">M:N多重化・GOMAXPROCS・CSP・Node比較</p></a><a href="#topic-testing" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q4</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">テストを書くメリット</h3><p class="text-sm text-neutral-500 mt-1">table-driven・-race・テストピラミッド</p></a><a href="#topic-cache" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q5</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">RDB / Redis / キャッシュ戦略</h3><p class="text-sm text-neutral-500 mt-1">cache-aside・TTL・thundering herd・index</p></a><a href="#topic-performance" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q6</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">パフォーマンス改善</h3><p class="text-sm text-neutral-500 mt-1">EXPLAIN・offset vs cursor・N+1</p></a><a href="#topic-error-handling" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q8</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">エラーハンドリング</h3><p class="text-sm text-neutral-500 mt-1">if err != nil・%wラップ・panic/recover</p></a><a href="#topic-interface" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q9</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">interface と generics</h3><p class="text-sm text-neutral-500 mt-1">構造的型付け・mock差し替え・generics</p></a><a href="#topic-context" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q10</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">context.Context</h3><p class="text-sm text-neutral-500 mt-1">キャンセル伝播・タイムアウト・リーク事故</p></a><a href="#topic-gc" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q11</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">GC と 低レイテンシ</h3><p class="text-sm text-neutral-500 mt-1">並行GC・p99安定・sync.Pool・言語比較</p></a><a href="#topic-lang-choice" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q12</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">Go / TS / Python の使い分け</h3><p class="text-sm text-neutral-500 mt-1">ワークロード・チーム・運用で選ぶ</p></a></div>
@@ -154,7 +154,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">チーム・進め方</h2>
 <div class="grid sm:grid-cols-2 gap-3"><a href="#topic-cost-optimization" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q34</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">コスト最適化の進め方</h3><p class="text-sm text-neutral-500 mt-1">計測で支配項→大きい所から・egress/CDN</p></a><a href="#topic-branch-review" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q35</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">branch戦略・PR粒度・レビュー</h3><p class="text-sm text-neutral-500 mt-1">trunk-based vs git-flow・設計先行</p></a><a href="#topic-first-two-weeks" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q37</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">最初の2週間で信頼を取る</h3><p class="text-sm text-neutral-500 mt-1">郷に従う→小さく早く貢献・信頼残高</p></a></div>
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">補足知識（Web / アーキ）</h2>
-<div class="grid sm:grid-cols-2 gap-3"><a href="#topic-request-lifecycle" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">リクエストの一生</h3><p class="text-sm text-neutral-500 mt-1">URL入力→DNS→TCP→TLS→LB→サーバ→描画</p></a><a href="#topic-load-balancer" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">ロードバランサ（LB）</h3><p class="text-sm text-neutral-500 mt-1">L4/L7・分散アルゴリズム・ヘルスチェック・TLS終端</p></a><a href="#topic-dns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DNS の仕組み</h3><p class="text-sm text-neutral-500 mt-1">名前解決フロー・レコード種類・TTL/伝播</p></a><a href="#topic-cors" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">CORS と 同一オリジンポリシー</h3><p class="text-sm text-neutral-500 mt-1">SOP・preflight・許可ヘッダ・credentials</p></a><a href="#topic-auth" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">認証と認可</h3><p class="text-sm text-neutral-500 mt-1">OAuth 2.0 / OIDC / JWT・session vs token</p></a><a href="#topic-microservices" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">マイクロサービス</h3><p class="text-sm text-neutral-500 mt-1">モノリス比較・独立デプロイ・SAGA・モノリスファースト</p></a><a href="#topic-opentelemetry" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">可観測性</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">OpenTelemetry</h3><p class="text-sm text-neutral-500 mt-1">3本柱・計装標準・Collector・分散トレース</p></a></div>
+<div class="grid sm:grid-cols-2 gap-3"><a href="#topic-request-lifecycle" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">リクエストの一生</h3><p class="text-sm text-neutral-500 mt-1">URL入力→DNS→TCP→TLS→LB→サーバ→描画</p></a><a href="#topic-load-balancer" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">ロードバランサ（LB）</h3><p class="text-sm text-neutral-500 mt-1">L4/L7・分散アルゴリズム・ヘルスチェック・TLS終端</p></a><a href="#topic-dns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DNS の仕組み</h3><p class="text-sm text-neutral-500 mt-1">名前解決フロー・レコード種類・TTL/伝播</p></a><a href="#topic-cors" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">CORS と 同一オリジンポリシー</h3><p class="text-sm text-neutral-500 mt-1">SOP・preflight・許可ヘッダ・credentials</p></a><a href="#topic-auth" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">認証と認可</h3><p class="text-sm text-neutral-500 mt-1">OAuth 2.0 / OIDC / JWT・session vs token</p></a><a href="#topic-microservices" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">マイクロサービス</h3><p class="text-sm text-neutral-500 mt-1">モノリス比較・独立デプロイ・SAGA・モノリスファースト</p></a><a href="#topic-opentelemetry" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">可観測性</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">OpenTelemetry</h3><p class="text-sm text-neutral-500 mt-1">3本柱・計装標準・Collector・分散トレース</p></a><a href="#topic-ddd-clean-architecture" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DDD と クリーンアーキテクチャ</h3><p class="text-sm text-neutral-500 mt-1">戦略/戦術・同心円・依存性のルール・Go構成</p></a><a href="#topic-architecture-patterns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">アーキテクチャパターンの比較</h3><p class="text-sm text-neutral-500 mt-1">レイヤード/MVC/ヘキサゴナル/オニオン/クリーン</p></a></div>
 </div></section>
 <section id="topic-container" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
 
@@ -3122,7 +3122,7 @@ func e()       { w := 5; go func(){ _ = w }() } // ⑤ 別goroutineが参照 →
       </p>
     </div>
     <div class="mt-4 rounded-lg bg-amber-50 border border-amber-200 p-3 text-sm text-amber-900">
-      <span class="font-semibold">実体験フック</span> — どのキューで、冪等をどう担保したか（dedup キーで捨てたか、DB の unique 制約で弾いたか）を一つ用意しておくと話が具体になる。
+      <span class="font-semibold">実務での引き出し</span> — どのキューで、冪等をどう担保したか（dedup キーで捨てたか、DB の unique 制約で弾いたか）を一つ言えるようにしておくと話が具体になる。
     </div>
   </section>
 
@@ -8907,7 +8907,559 @@ func e()       { w := 5; go func(){ _ = w }() } // ⑤ 別goroutineが参照 →
     </div>
   </section>
 
-</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-microservices" class="text-neutral-500 hover:text-neutral-900">‹ マイクロサービス</a><span></span></nav></section>
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-microservices" class="text-neutral-500 hover:text-neutral-900">‹ マイクロサービス</a><a href="#topic-ddd-clean-architecture" class="text-neutral-500 hover:text-neutral-900">DDD と クリーンアーキテクチャ ›</a></nav></section>
+<section id="topic-ddd-clean-architecture" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
+
+  
+
+  <header class="mt-3 mb-10">
+    <p class="text-xs uppercase tracking-widest text-neutral-500">補足知識 / アーキテクチャ</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight">DDD と クリーンアーキテクチャ</h1>
+    <p class="mt-3 text-neutral-600">DDDでドメインの中身を設計し、クリーンアーキテクチャで依存の向きを守る。2つは競合ではなく組み合わせて使う道具。</p>
+  </header>
+
+  <!-- DDD とは -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">DDD ＝ Domain-Driven Design（ドメイン駆動設計）とは</h2>
+    <p class="text-neutral-600 mb-5">ビジネスの複雑さを<span class="font-medium">ドメインモデル</span>（業務の概念やルールをそのままコードにした模型）に落とし込む設計手法。柱は2つある。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-sky-200 bg-white p-4">
+        <div class="text-2xl mb-2">🗺️</div>
+        <h3 class="font-bold text-sky-700">戦略的設計 ＝ 全体をどう区切るか</h3>
+        <ul class="text-sm text-neutral-600 mt-2 space-y-2">
+          <li><span class="font-semibold text-sky-800">ユビキタス言語</span><br>開発者とドメインエキスパート（業務に詳しい人）が<span class="font-medium">同じ言葉</span>を使う。コードの名前と業務の言葉を一致させ、翻訳のズレをなくす。</li>
+          <li><span class="font-semibold text-sky-800">境界づけられたコンテキスト（Bounded Context）</span><br>モデルが通用する<span class="font-medium">範囲を区切る</span>。同じ「商品」でも販売と在庫では意味が違ってよい。境界の外まで1つのモデルを引き伸ばさない。</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <div class="text-2xl mb-2">🧱</div>
+        <h3 class="font-bold text-emerald-700">戦術的設計 ＝ 中身をどう作るか</h3>
+        <p class="text-sm text-neutral-600 mt-2">区切った各コンテキストの中で、ドメインモデルを実装するための部品パターン。エンティティ・値オブジェクト・集約・リポジトリなど（下の表）。</p>
+        <p class="text-sm text-neutral-600 mt-2">面接では「戦術パターンの暗記」より、<span class="font-medium">なぜその部品が要るのか</span>（整合性・不変条件を守るため）を言えるほうが強い。</p>
+      </div>
+    </div>
+
+    <div class="overflow-hidden rounded-xl border border-neutral-200 mt-5">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-neutral-100 text-left">
+            <th class="px-4 py-3 font-semibold">戦術的設計の用語</th>
+            <th class="px-4 py-3 font-semibold">何か</th>
+            <th class="px-4 py-3 font-semibold">ポイント</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-neutral-100">
+          <tr><td class="px-4 py-3 font-medium text-emerald-700">エンティティ</td><td class="px-4 py-3">IDで同一性が決まるもの</td><td class="px-4 py-3 text-neutral-600">属性が変わっても同じID なら同じもの（例＝ユーザー）。</td></tr>
+          <tr class="bg-neutral-50"><td class="px-4 py-3 font-medium text-emerald-700">値オブジェクト</td><td class="px-4 py-3">値で同一性が決まるもの</td><td class="px-4 py-3 text-neutral-600">不変（immutable）。中身が同じなら同じもの（例＝金額、住所）。</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-emerald-700">集約（Aggregate）</td><td class="px-4 py-3">整合性の境界</td><td class="px-4 py-3 text-neutral-600">一緒に整合を保つべきオブジェクトのまとまり。<span class="font-medium">トランザクションは集約単位</span>で切る。</td></tr>
+          <tr class="bg-neutral-50"><td class="px-4 py-3 font-medium text-emerald-700">リポジトリ</td><td class="px-4 py-3">永続化の抽象</td><td class="px-4 py-3 text-neutral-600">「保存する・取り出す」だけをinterfaceで表す。DBの種類はドメインから見えない。</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-emerald-700">ドメインサービス</td><td class="px-4 py-3">どのエンティティにも属さないロジック</td><td class="px-4 py-3 text-neutral-600">複数の集約をまたぐ判定など、置き場のないルールの置き場。</td></tr>
+          <tr class="bg-neutral-50"><td class="px-4 py-3 font-medium text-emerald-700">ドメインイベント</td><td class="px-4 py-3">起きた事実の記録</td><td class="px-4 py-3 text-neutral-600">「注文が確定した」等を出来事として表し、他コンテキストへ疎結合に伝える。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- クリーンアーキテクチャ -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">クリーンアーキテクチャとは</h2>
+    <p class="text-neutral-600 mb-5">Robert C. Martin が提唱した同心円のアーキテクチャ。ルールはただ1つ、<span class="font-medium">依存は内側に向かってのみ</span>（依存性のルール）。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <svg viewBox="0 0 620 420" class="w-full">
+        <!-- 同心円（外→内） -->
+        <circle cx="250" cy="210" r="190" fill="#e0e7ff" stroke="#4f46e5"/>
+        <circle cx="250" cy="210" r="145" fill="#d1fae5" stroke="#059669"/>
+        <circle cx="250" cy="210" r="100" fill="#fef3c7" stroke="#d97706"/>
+        <circle cx="250" cy="210" r="55"  fill="#ffe4e6" stroke="#e11d48"/>
+        <!-- ラベル（各リングの上部） -->
+        <text x="250" y="214" text-anchor="middle" font-size="12" font-weight="700" fill="#9f1239">Entities</text>
+        <text x="250" y="230" text-anchor="middle" font-size="9" fill="#9f1239">企業全体の業務ルール</text>
+        <text x="250" y="136" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Use Cases</text>
+        <text x="250" y="151" text-anchor="middle" font-size="9" fill="#92400e">アプリ固有の手順</text>
+        <text x="250" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">Interface Adapters</text>
+        <text x="250" y="106" text-anchor="middle" font-size="9" fill="#065f46">controller / presenter / gateway</text>
+        <text x="250" y="46" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">Frameworks &amp; Drivers</text>
+        <text x="250" y="61" text-anchor="middle" font-size="9" fill="#3730a3">Web・DB・UI・外部API（詳細）</text>
+        <!-- 依存の向き（外→内の矢印） -->
+        <g stroke="#374151" stroke-width="2">
+          <line x1="435" y1="330" x2="392" y2="302" marker-end="url(#s40-dep)"/>
+          <line x1="384" y1="297" x2="345" y2="271" marker-end="url(#s40-dep)"/>
+          <line x1="338" y1="267" x2="300" y2="243" marker-end="url(#s40-dep)"/>
+        </g>
+        <text x="455" y="352" text-anchor="middle" font-size="11" font-weight="600" fill="#374151">依存の向き</text>
+        <text x="455" y="367" text-anchor="middle" font-size="10" fill="#6b7280">外 → 内 の一方向のみ</text>
+        <!-- 凡例 -->
+        <g font-size="11">
+          <rect x="470" y="60" width="14" height="14" rx="3" fill="#ffe4e6" stroke="#e11d48"/><text x="492" y="71" fill="#374151">内側ほど安定・抽象</text>
+          <rect x="470" y="86" width="14" height="14" rx="3" fill="#e0e7ff" stroke="#4f46e5"/><text x="492" y="97" fill="#374151">外側ほど変わりやすい詳細</text>
+        </g>
+        <defs><marker id="s40-dep" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#374151"/></marker></defs>
+      </svg>
+      <p class="text-sm text-neutral-600 mt-2 px-1">内側は「何をするか」（業務ルール）、外側は「どうやるか」（DB・フレームワーク・UI）。<span class="font-medium">外側の都合を内側が知ってはいけない</span>。だからDBを差し替えてもEntitiesとUse Casesは無傷でいられる。</p>
+    </div>
+
+    <div class="mt-4 rounded-xl border border-neutral-200 bg-white p-5">
+      <h3 class="font-bold mb-2">DIP ＝ Dependency Inversion Principle（依存性逆転の原則）で「内→外」を消す</h3>
+      <p class="text-sm text-neutral-600 mb-4">「Use CaseがDBに保存したい」のに「Use CaseはDBを知ってはいけない」。この矛盾を解くのがDIP。<span class="font-medium">interfaceを内側に置き、実装を外側に置く</span>。</p>
+      <div class="grid md:grid-cols-2 gap-3 text-sm">
+        <div class="rounded-lg bg-rose-50 border border-rose-200 p-3">
+          <p class="font-semibold text-rose-700 mb-2">✗ 素直に書くと</p>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="rounded bg-amber-100 border border-amber-300 px-2 py-1 font-medium text-amber-900">Use Case</span>
+            <span class="text-rose-600 font-bold">→</span>
+            <span class="rounded bg-indigo-100 border border-indigo-300 px-2 py-1 font-medium text-indigo-900">MySQL実装</span>
+          </div>
+          <p class="text-xs text-neutral-600 mt-2">内側が外側の具体（MySQL）に依存。DBを替えるとUse Caseが壊れる。</p>
+        </div>
+        <div class="rounded-lg bg-emerald-50 border border-emerald-200 p-3">
+          <p class="font-semibold text-emerald-700 mb-2">✓ DIPを使うと</p>
+          <div class="flex items-center gap-2 text-xs flex-wrap">
+            <span class="rounded bg-amber-100 border border-amber-300 px-2 py-1 font-medium text-amber-900">Use Case</span>
+            <span class="text-emerald-600 font-bold">→</span>
+            <span class="rounded bg-rose-100 border border-rose-300 px-2 py-1 font-medium text-rose-900">Repository interface（内側）</span>
+            <span class="text-emerald-600 font-bold">←</span>
+            <span class="rounded bg-indigo-100 border border-indigo-300 px-2 py-1 font-medium text-indigo-900">MySQL実装（外側）</span>
+          </div>
+          <p class="text-xs text-neutral-600 mt-2">interfaceは内側の持ち物。外側の実装がそれを満たしに来る。矢印（依存）が逆転し、全部内向きになる。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 組み合わせ -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">2つの組み合わせ</h2>
+    <p class="text-neutral-600 mb-5">DDDが「ドメイン層の<span class="font-medium">中身</span>をどう設計するか」、クリーンアーキテクチャが「層の<span class="font-medium">依存方向</span>をどう守るか」。役割が違うので同時に使える。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <p class="text-sm font-medium mb-3">Goでの典型的なディレクトリ構成</p>
+      <svg viewBox="0 0 620 260" class="w-full">
+        <!-- interface -->
+        <rect x="20" y="20" width="270" height="52" rx="8" fill="#d1fae5" stroke="#059669"/>
+        <text x="36" y="42" font-size="12" font-weight="700" fill="#065f46">interface/（handler）</text>
+        <text x="36" y="60" font-size="10" fill="#065f46">HTTP/gRPCの受け口。リクエストを usecase に渡す</text>
+        <!-- infrastructure -->
+        <rect x="330" y="20" width="270" height="52" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
+        <text x="346" y="42" font-size="12" font-weight="700" fill="#3730a3">infrastructure/（repository実装）</text>
+        <text x="346" y="60" font-size="10" fill="#3730a3">DBアクセスの具体。domainのinterfaceを実装する</text>
+        <!-- usecase -->
+        <rect x="20" y="110" width="270" height="52" rx="8" fill="#fef3c7" stroke="#d97706"/>
+        <text x="36" y="132" font-size="12" font-weight="700" fill="#92400e">usecase/</text>
+        <text x="36" y="150" font-size="10" fill="#92400e">アプリの手順。domainのモデルとinterfaceだけを使う</text>
+        <!-- domain -->
+        <rect x="140" y="196" width="340" height="52" rx="8" fill="#ffe4e6" stroke="#e11d48"/>
+        <text x="156" y="218" font-size="12" font-weight="700" fill="#9f1239">domain/（エンティティ・値オブジェクト・repository interface）</text>
+        <text x="156" y="236" font-size="10" fill="#9f1239">どこにも依存しない。DDDの戦術的設計はここに効く</text>
+        <!-- 矢印（すべて内向き） -->
+        <g stroke="#374151" stroke-width="2">
+          <line x1="155" y1="72" x2="155" y2="106" marker-end="url(#s40-dir)"/>
+          <line x1="180" y1="162" x2="240" y2="192" marker-end="url(#s40-dir)"/>
+          <line x1="465" y1="72" x2="410" y2="192" marker-end="url(#s40-dir)"/>
+        </g>
+        <text x="180" y="94" font-size="10" fill="#6b7280">呼ぶ</text>
+        <text x="150" y="184" font-size="10" fill="#6b7280">使う</text>
+        <text x="455" y="140" font-size="10" fill="#6b7280">interfaceを実装しに来る（DIP）</text>
+        <defs><marker id="s40-dir" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#374151"/></marker></defs>
+      </svg>
+      <p class="text-sm text-neutral-600 mt-2 px-1">矢印（依存）は全部 domain に向かう。<span class="font-medium">domain はどこにも依存しない</span>ので、DBもフレームワークも無しで単体テストできる。</p>
+    </div>
+  </section>
+
+  <!-- メリット / デメリット -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">メリット / デメリット</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-2">✓ メリット</h3>
+        <ul class="text-sm text-neutral-600 space-y-2 list-disc list-inside">
+          <li>ビジネスロジックがフレームワーク・DBから<span class="font-medium">独立</span>する</li>
+          <li><span class="font-medium">テストが容易</span>（domainを外部依存なしで単体テストできる）</li>
+          <li><span class="font-medium">変更に強い</span>（DB差し替え・UI追加が外側だけで済む）</li>
+          <li>ユビキタス言語が<span class="font-medium">チームの共通言語</span>になり会話とコードが揃う</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-rose-200 bg-white p-4">
+        <h3 class="font-bold text-rose-700 mb-2">✗ デメリット</h3>
+        <ul class="text-sm text-neutral-600 space-y-2 list-disc list-inside">
+          <li><span class="font-medium">学習コスト</span>が高い（用語と考え方の習得が要る）</li>
+          <li>層とinterfaceの分だけ<span class="font-medium">ボイラープレートが増える</span></li>
+          <li><span class="font-medium">単純なCRUDには過剰</span>（薄いロジックを厚い層で包むことになる）</li>
+          <li>境界や集約の切り方など<span class="font-medium">設計の議論コスト</span>がかかる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- いつ採用するか -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">いつ採用するか</h2>
+    <p class="text-neutral-600 mb-5">「アーキテクチャは複雑さに対する投資」。複雑さが小さいのに投資すると回収できない。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-2">効く場面</h3>
+        <ul class="text-sm text-neutral-600 space-y-1 list-disc list-inside">
+          <li>ドメイン（業務ルール）が<span class="font-medium">複雑</span></li>
+          <li><span class="font-medium">長期運用</span>で変更が積み重なる</li>
+          <li><span class="font-medium">チームが大きく</span>、共通言語と境界が要る</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-amber-200 bg-white p-4">
+        <h3 class="font-bold text-amber-700 mb-2">過剰になる場面</h3>
+        <ul class="text-sm text-neutral-600 space-y-1 list-disc list-inside">
+          <li>ほぼ<span class="font-medium">単純CRUD</span>のアプリ</li>
+          <li><span class="font-medium">小規模</span>で層の数が手間に見合わない</li>
+          <li>検証用など<span class="font-medium">短命</span>なプロダクト</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- まとめ -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">1枚で言える版</h2>
+    <div class="rounded-xl bg-neutral-900 text-neutral-100 p-6 leading-relaxed text-sm">
+      <span class="text-sky-300 font-medium">DDD（Domain-Driven Design＝ドメイン駆動設計）</span>はビジネスの複雑さをドメインモデルに落とし込む手法。戦略的設計（ユビキタス言語・境界づけられたコンテキスト）で全体を区切り、戦術的設計（エンティティ・値オブジェクト・集約・リポジトリ）で中身を作る。トランザクションは集約単位。<br>
+      <span class="text-indigo-300 font-medium">クリーンアーキテクチャ</span>は同心円で、依存性のルール＝<span class="text-rose-300 font-medium">依存は内側に向かってのみ</span>。DB・フレームワーク・UIは最外周の詳細で、<span class="text-emerald-300 font-medium">DIP（依存性逆転の原則）</span>によりinterfaceを内側・実装を外側に置いて矢印を内向きに揃える。<br>
+      2つは組み合わせて使う。DDDでドメイン層の中身を設計し、クリーンアーキテクチャで層の依存方向を守る。domainはどこにも依存しないので単体でテストできる。<br>
+      ただし学習コストとボイラープレートが増えるので、<span class="text-amber-300 font-medium">複雑なドメイン・長期運用・大きなチーム</span>で投資が回収できるときに採用する。単純CRUDには過剰。
+    </div>
+  </section>
+
+  <!-- チェック -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-4">理解度チェック</h2>
+    <p class="text-sm text-neutral-500 mb-4">まず自分で答えてから開く。</p>
+    <div class="space-y-2">
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">1. エンティティと値オブジェクトの違いは？</summary>
+        <p class="mt-2 text-sm text-neutral-600">エンティティはIDで同一性が決まる（属性が変わっても同じIDなら同じ）。値オブジェクトは値で同一性が決まり、不変として扱う（中身が同じなら同じ）。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">2. クリーンアーキテクチャの「依存性のルール」とは？</summary>
+        <p class="mt-2 text-sm text-neutral-600">依存は内側（Entities・Use Cases）に向かってのみ許される。DB・フレームワーク・UIといった外側の詳細を、内側のコードが知ってはいけない。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">3. Use CaseがDBに保存したいのに「内→外」に依存できない。どう解決する？</summary>
+        <p class="mt-2 text-sm text-neutral-600">DIP（Dependency Inversion Principle＝依存性逆転の原則）を使う。Repositoryのinterfaceを内側（domain）に置き、DBアクセスの実装を外側（infrastructure）に置く。実装側がinterfaceを満たしに来るので、依存の矢印はすべて内向きになる。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">4. DDD＋クリーンアーキテクチャをいつ採用し、いつ避ける？</summary>
+        <p class="mt-2 text-sm text-neutral-600">ドメインが複雑・長期運用・チームが大きい場合に効く。単純CRUD・小規模・短命なプロダクトには学習コストとボイラープレートが見合わず過剰。アーキテクチャは複雑さに対する投資、と説明する。</p>
+      </details>
+    </div>
+  </section>
+
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-opentelemetry" class="text-neutral-500 hover:text-neutral-900">‹ OpenTelemetry</a><a href="#topic-architecture-patterns" class="text-neutral-500 hover:text-neutral-900">アーキテクチャパターンの比較 ›</a></nav></section>
+<section id="topic-architecture-patterns" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
+
+  
+
+  <header class="mt-3 mb-10">
+    <p class="text-xs uppercase tracking-widest text-neutral-500">補足知識 / アーキテクチャ</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight">アーキテクチャパターンの比較</h1>
+    <p class="mt-3 text-neutral-600">レイヤード・MVC・ヘキサゴナル・オニオン・クリーン。それぞれ何を守ろうとした形なのかを、1本の進化の軸で整理する。</p>
+  </header>
+
+  <!-- 前提 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">前提 — アーキテクチャは何のためにあるか</h2>
+    <p class="text-neutral-600 mb-5">目的は<span class="font-medium">関心の分離</span>と<span class="font-medium">依存の制御</span>。この2つに尽きる。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-indigo-200 bg-white p-4">
+        <div class="text-2xl mb-2">🧩</div>
+        <h3 class="font-bold text-indigo-700">関心の分離</h3>
+        <p class="text-sm text-neutral-600 mt-2">「画面の都合」「業務ルール」「DBの都合」を同じ場所に書かない。混ざると、1つ変えるだけで全部に波及する。</p>
+      </div>
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <div class="text-2xl mb-2">🧭</div>
+        <h3 class="font-bold text-emerald-700">依存の制御</h3>
+        <p class="text-sm text-neutral-600 mt-2">「何が何を知っているか」の向きを設計する。大事なもの（業務ルール）が、変わりやすいもの（UI・DB・フレームワーク）を知らない状態を作る。</p>
+      </div>
+    </div>
+    <div class="mt-4 rounded-lg bg-neutral-100 p-4 text-sm text-neutral-700">
+      <span class="font-semibold">読み方の軸</span> — 以下のパターンは全部「<span class="font-medium">ビジネスロジックを、UI・DB・フレームワークという"詳細"から守る</span>」方向に進化してきた系譜として読むと、一本の線でつながる。レイヤード → ヘキサゴナル → オニオン → クリーンの順に、守り方が強くなる。
+    </div>
+  </section>
+
+  <!-- レイヤード -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">レイヤード（Layered〔階層型〕）</h2>
+    <p class="text-neutral-600 mb-5">層を上から下に積み、依存は下向きのみ。最も基本的な形。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <div class="grid md:grid-cols-2 gap-4 items-center">
+        <svg viewBox="0 0 300 230" class="w-full max-w-xs mx-auto">
+          <rect x="40" y="10" width="220" height="38" rx="6" fill="#e0f2fe" stroke="#0284c7"/>
+          <text x="150" y="34" text-anchor="middle" font-size="12" font-weight="600" fill="#0369a1">presentation（画面・API）</text>
+          <line x1="150" y1="48" x2="150" y2="62" stroke="#9ca3af" stroke-width="2" marker-end="url(#s41-lay)"/>
+          <rect x="40" y="64" width="220" height="38" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+          <text x="150" y="88" text-anchor="middle" font-size="12" font-weight="600" fill="#5b21b6">application（ユースケース）</text>
+          <line x1="150" y1="102" x2="150" y2="116" stroke="#9ca3af" stroke-width="2" marker-end="url(#s41-lay)"/>
+          <rect x="40" y="118" width="220" height="38" rx="6" fill="#fef9c3" stroke="#ca8a04"/>
+          <text x="150" y="142" text-anchor="middle" font-size="12" font-weight="600" fill="#854d0e">domain（業務ルール）</text>
+          <line x1="150" y1="156" x2="150" y2="170" stroke="#9ca3af" stroke-width="2" marker-end="url(#s41-lay)"/>
+          <rect x="40" y="172" width="220" height="38" rx="6" fill="#e0e7ff" stroke="#4f46e5"/>
+          <text x="150" y="196" text-anchor="middle" font-size="12" font-weight="600" fill="#3730a3">infrastructure（DB・外部API）</text>
+          <defs><marker id="s41-lay" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#9ca3af"/></marker></defs>
+        </svg>
+        <div class="text-sm space-y-3">
+          <div class="rounded-lg bg-emerald-50 border border-emerald-200 p-3">
+            <span class="font-semibold text-emerald-800">強み</span><br>シンプルで学習コストが低い。役割の置き場所が一目で分かり、小規模なら十分。
+          </div>
+          <div class="rounded-lg bg-rose-50 border border-rose-200 p-3">
+            <span class="font-semibold text-rose-800">弱み</span><br>依存が下向きに素通りしがちで、domain が infrastructure（DBのテーブル構造・ORMの都合）に引きずられやすい。「業務ルールを守る」力は実は弱い。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MVC -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">MVC（Model-View-Controller）</h2>
+    <p class="text-neutral-600 mb-5">アプリ全体の構造というより、<span class="font-medium">UI層（プレゼンテーション寄り）の整理パターン</span>。Webフレームワークの標準形。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <svg viewBox="0 0 620 150" class="w-full">
+        <text x="35" y="80" font-size="22">🧑</text>
+        <line x1="70" y1="72" x2="130" y2="72" stroke="#6b7280" stroke-width="2" marker-end="url(#s41-mvc)"/>
+        <text x="100" y="62" text-anchor="middle" font-size="10" fill="#6b7280">リクエスト</text>
+        <rect x="132" y="48" width="130" height="48" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="197" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#0369a1">Controller</text>
+        <text x="197" y="87" text-anchor="middle" font-size="10" fill="#0369a1">受付・交通整理</text>
+        <line x1="262" y1="72" x2="322" y2="72" stroke="#6b7280" stroke-width="2" marker-end="url(#s41-mvc)"/>
+        <rect x="324" y="48" width="130" height="48" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+        <text x="389" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#854d0e">Model</text>
+        <text x="389" y="87" text-anchor="middle" font-size="10" fill="#854d0e">データと業務ロジック</text>
+        <path d="M 324 92 C 280 130, 250 130, 232 118" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#s41-mvc)"/>
+        <rect x="470" y="48" width="130" height="48" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+        <text x="535" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#5b21b6">View</text>
+        <text x="535" y="87" text-anchor="middle" font-size="10" fill="#5b21b6">表示（HTML・JSON）</text>
+        <path d="M 232 110 C 300 138, 420 138, 470 96" fill="none" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#s41-mvc)"/>
+        <text x="350" y="140" text-anchor="middle" font-size="10" fill="#6b7280">Controller が Model の結果を View に渡す</text>
+        <defs><marker id="s41-mvc" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker></defs>
+      </svg>
+      <div class="grid md:grid-cols-2 gap-3 mt-3 text-sm">
+        <div class="rounded-lg bg-neutral-50 border border-neutral-200 p-3"><span class="font-semibold">位置づけ</span><br>レイヤードなどと並列に比べるものではなく、presentation 層の中の役割分担。だから「MVC＋レイヤード」のような併用が普通。</div>
+        <div class="rounded-lg bg-amber-50 border border-amber-200 p-3"><span class="font-semibold text-amber-900">よくある落とし穴</span><br>業務ロジックの置き場所が曖昧で、Controller や Model が肥大化しがち（fat controller / fat model）。大きくなったら層を分ける次の段へ。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ヘキサゴナル -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">ヘキサゴナル（Hexagonal / Ports &amp; Adapters〔ポートとアダプタ〕）</h2>
+    <p class="text-neutral-600 mb-5">中心にアプリケーションを置き、外部との接点を Port（interface）と Adapter（実装）に分ける。外側を差し替え可能にする発想の転換点。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <svg viewBox="0 0 620 250" class="w-full">
+        <!-- 六角形 -->
+        <polygon points="310,35 415,90 415,160 310,215 205,160 205,90" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+        <text x="310" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#854d0e">アプリケーション</text>
+        <text x="310" y="136" text-anchor="middle" font-size="11" fill="#854d0e">（業務ルール）</text>
+        <!-- Port 左 -->
+        <rect x="180" y="105" width="50" height="40" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+        <text x="205" y="129" text-anchor="middle" font-size="10" font-weight="600" fill="#5b21b6">Port</text>
+        <!-- Adapter 左（UI） -->
+        <rect x="30" y="100" width="110" height="50" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="85" y="122" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">Adapter</text>
+        <text x="85" y="138" text-anchor="middle" font-size="10" fill="#0369a1">Web UI / CLI</text>
+        <line x1="140" y1="125" x2="178" y2="125" stroke="#6b7280" stroke-width="2" marker-end="url(#s41-hex)"/>
+        <!-- Port 右上 -->
+        <rect x="390" y="70" width="50" height="40" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+        <text x="415" y="94" text-anchor="middle" font-size="10" font-weight="600" fill="#5b21b6">Port</text>
+        <!-- Adapter 右上（DB） -->
+        <rect x="480" y="60" width="110" height="50" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
+        <text x="535" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#3730a3">Adapter</text>
+        <text x="535" y="98" text-anchor="middle" font-size="10" fill="#3730a3">DB（RDB / NoSQL）</text>
+        <line x1="478" y1="85" x2="442" y2="88" stroke="#6b7280" stroke-width="2" marker-end="url(#s41-hex)"/>
+        <!-- Port 右下 -->
+        <rect x="390" y="140" width="50" height="40" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+        <text x="415" y="164" text-anchor="middle" font-size="10" font-weight="600" fill="#5b21b6">Port</text>
+        <!-- Adapter 右下（外部API） -->
+        <rect x="480" y="140" width="110" height="50" rx="8" fill="#ffe4e6" stroke="#e11d48"/>
+        <text x="535" y="162" text-anchor="middle" font-size="11" font-weight="600" fill="#9f1239">Adapter</text>
+        <text x="535" y="178" text-anchor="middle" font-size="10" fill="#9f1239">外部API / モック</text>
+        <line x1="478" y1="163" x2="442" y2="161" stroke="#6b7280" stroke-width="2" marker-end="url(#s41-hex)"/>
+        <text x="310" y="240" text-anchor="middle" font-size="10" fill="#6b7280">Port ＝ interface（中心が定義）、Adapter ＝ その実装（外側で差し替え可能）</text>
+        <defs><marker id="s41-hex" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker></defs>
+      </svg>
+      <p class="text-sm text-neutral-600 mt-2 px-1">DBや外部APIは<span class="font-medium">アダプタとして交換できる</span>。本番はRDB、テストはインメモリのモック、と差し替えられるので、業務ルールをDB無しでテストできる。</p>
+    </div>
+  </section>
+
+  <!-- オニオン -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">オニオン（Onion〔玉ねぎ型〕）</h2>
+    <p class="text-neutral-600 mb-5">同心円でドメインモデルを中心に据え、<span class="font-medium">依存は内向きのみ</span>と明文化した形。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <div class="grid md:grid-cols-2 gap-4 items-center">
+        <svg viewBox="0 0 300 260" class="w-full max-w-xs mx-auto">
+          <circle cx="150" cy="130" r="120" fill="#e0f2fe" stroke="#0284c7"/>
+          <circle cx="150" cy="130" r="88" fill="#ede9fe" stroke="#7c3aed"/>
+          <circle cx="150" cy="130" r="58" fill="#fef9c3" stroke="#ca8a04"/>
+          <circle cx="150" cy="130" r="30" fill="#fde68a" stroke="#b45309"/>
+          <text x="150" y="134" text-anchor="middle" font-size="10" font-weight="700" fill="#78350f">ドメイン</text>
+          <text x="150" y="146" text-anchor="middle" font-size="9" fill="#78350f">モデル</text>
+          <text x="150" y="86" text-anchor="middle" font-size="10" font-weight="600" fill="#854d0e">ドメインサービス</text>
+          <text x="150" y="56" text-anchor="middle" font-size="10" font-weight="600" fill="#5b21b6">アプリケーション</text>
+          <text x="150" y="24" text-anchor="middle" font-size="10" font-weight="600" fill="#0369a1">UI・DB・テスト（外側）</text>
+          <line x1="150" y1="235" x2="150" y2="172" stroke="#374151" stroke-width="2" marker-end="url(#s41-oni)"/>
+          <text x="160" y="215" font-size="10" fill="#374151">依存は内向きのみ</text>
+          <defs><marker id="s41-oni" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#374151"/></marker></defs>
+        </svg>
+        <div class="text-sm space-y-3">
+          <div class="rounded-lg bg-neutral-50 border border-neutral-200 p-3">
+            <span class="font-semibold">レイヤードとの違い</span><br>積み方が縦から同心円になり、DB が「一番下の土台」ではなく<span class="font-medium">一番外側の詳細</span>に格下げされる。中心のドメインモデルは外側を一切知らない。
+          </div>
+          <div class="rounded-lg bg-emerald-50 border border-emerald-200 p-3">
+            <span class="font-semibold text-emerald-800">効き目</span><br>DBやフレームワークを替えても中心は無傷。業務ルールの寿命がインフラの流行より長い、という前提に合う。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- クリーン -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">クリーン（Clean Architecture）</h2>
+    <p class="text-neutral-600 mb-5">ヘキサゴナルやオニオンの考えを統合した<span class="font-medium">集大成的な整理</span>。同心円＋「依存性のルール」。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <div class="grid md:grid-cols-2 gap-4 items-center">
+        <svg viewBox="0 0 300 260" class="w-full max-w-xs mx-auto">
+          <circle cx="150" cy="130" r="120" fill="#e0e7ff" stroke="#4f46e5"/>
+          <circle cx="150" cy="130" r="90" fill="#e0f2fe" stroke="#0284c7"/>
+          <circle cx="150" cy="130" r="60" fill="#ede9fe" stroke="#7c3aed"/>
+          <circle cx="150" cy="130" r="32" fill="#fef9c3" stroke="#ca8a04"/>
+          <text x="150" y="127" text-anchor="middle" font-size="9" font-weight="700" fill="#854d0e">Entities</text>
+          <text x="150" y="139" text-anchor="middle" font-size="8" fill="#854d0e">企業の業務ルール</text>
+          <text x="150" y="86" text-anchor="middle" font-size="9" font-weight="600" fill="#5b21b6">Use Cases</text>
+          <text x="150" y="56" text-anchor="middle" font-size="9" font-weight="600" fill="#0369a1">Interface Adapters</text>
+          <text x="150" y="24" text-anchor="middle" font-size="9" font-weight="600" fill="#3730a3">Frameworks &amp; Drivers（UI・DB・Web）</text>
+          <line x1="55" y1="220 " x2="110" y2="165" stroke="#374151" stroke-width="2" marker-end="url(#s41-cln)"/>
+          <text x="40" y="242" font-size="10" fill="#374151">依存性のルール ＝ 内向きのみ</text>
+          <defs><marker id="s41-cln" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#374151"/></marker></defs>
+        </svg>
+        <div class="text-sm space-y-3">
+          <div class="rounded-lg bg-neutral-50 border border-neutral-200 p-3">
+            <span class="font-semibold">依存性のルール</span><br>ソースコードの依存は<span class="font-medium">必ず内側（抽象度の高い方）だけ</span>に向ける。内側は外側の名前を知ってはいけない。外→内の呼び出しは interface（DIP ＝ Dependency Inversion Principle〔依存性逆転の原則〕）で実現する。
+          </div>
+          <div class="rounded-lg bg-neutral-50 border border-neutral-200 p-3">
+            <span class="font-semibold">新発明ではない</span><br>ヘキサゴナルの「差し替え可能な外側」、オニオンの「同心円＋内向き依存」を1枚にまとめ直したもの。だから3つは対立でなく同族。
+          </div>
+        </div>
+      </div>
+      <p class="text-sm text-neutral-600 mt-3 px-1">実装の詳細や DDD（Domain-Driven Design〔ドメイン駆動設計〕）との組み合わせ方は <a href="#topic-ddd-clean-architecture" class="text-indigo-600 underline hover:text-indigo-800">DDD とクリーンアーキテクチャ</a> のノートに切り出している。</p>
+    </div>
+  </section>
+
+  <!-- 比較表 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">比較表</h2>
+    <div class="overflow-x-auto rounded-xl border border-neutral-200">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-neutral-100 text-left">
+            <th class="px-4 py-3 font-semibold">パターン</th>
+            <th class="px-4 py-3 font-semibold">依存の向き</th>
+            <th class="px-4 py-3 font-semibold">テスト容易性</th>
+            <th class="px-4 py-3 font-semibold">複雑さ・コスト</th>
+            <th class="px-4 py-3 font-semibold">向く場面</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-neutral-100">
+          <tr>
+            <td class="px-4 py-3 font-medium text-sky-700">レイヤード</td>
+            <td class="px-4 py-3 text-neutral-600">上→下（DBが土台）</td>
+            <td class="px-4 py-3">△ 下の層を巻き込みがち</td>
+            <td class="px-4 py-3">低</td>
+            <td class="px-4 py-3 text-neutral-600">小規模・CRUD中心・学習</td>
+          </tr>
+          <tr class="bg-neutral-50">
+            <td class="px-4 py-3 font-medium text-neutral-700">MVC</td>
+            <td class="px-4 py-3 text-neutral-600">UI層内の役割分担</td>
+            <td class="px-4 py-3">△ ロジック置き場が曖昧</td>
+            <td class="px-4 py-3">低</td>
+            <td class="px-4 py-3 text-neutral-600">Webフレームワーク標準の開発</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-medium text-violet-700">ヘキサゴナル</td>
+            <td class="px-4 py-3 text-neutral-600">外→中心（Port経由）</td>
+            <td class="px-4 py-3">◎ アダプタ差し替えで単体化</td>
+            <td class="px-4 py-3">中</td>
+            <td class="px-4 py-3 text-neutral-600">外部接続が多い・差し替えたい</td>
+          </tr>
+          <tr class="bg-neutral-50">
+            <td class="px-4 py-3 font-medium text-amber-700">オニオン</td>
+            <td class="px-4 py-3 text-neutral-600">内向きのみ（同心円）</td>
+            <td class="px-4 py-3">◎ 中心はインフラ無しで試験可</td>
+            <td class="px-4 py-3">中</td>
+            <td class="px-4 py-3 text-neutral-600">ドメインモデル中心の設計</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-3 font-medium text-emerald-700">クリーン</td>
+            <td class="px-4 py-3 text-neutral-600">内向きのみ＋依存性のルール</td>
+            <td class="px-4 py-3">◎ 各円を独立に試験可</td>
+            <td class="px-4 py-3">高（層とinterfaceが増える）</td>
+            <td class="px-4 py-3 text-neutral-600">複雑なドメイン・長期運用</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-sm text-neutral-600 mt-3">ヘキサゴナル・オニオン・クリーンは「内側を詳細から守る」という同じ思想の別表現で、実務上の違いは呼び名と図の描き方の差が大きい。</p>
+  </section>
+
+  <!-- 選び方 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">選び方</h2>
+    <p class="text-neutral-600 mb-5">全部に最強のアーキテクチャは無い。<span class="font-medium">複雑さへの投資対効果</span>で選ぶ。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-sky-200 bg-white p-4">
+        <h3 class="font-bold text-sky-700 mb-1">単純なCRUD・小規模</h3>
+        <p class="text-sm text-neutral-600">レイヤードやフレームワーク標準（MVC）で十分。業務ルールが薄いのに層とinterfaceを増やしても、書く量が増えるだけで守るものが無い。</p>
+      </div>
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-1">ドメインが複雑・長期運用</h3>
+        <p class="text-sm text-neutral-600">クリーン系＋DDD（Domain-Driven Design）が効く。業務ルールが資産であり、UI・DB・フレームワークより長生きするなら、守る投資が回収できる。</p>
+      </div>
+    </div>
+    <div class="mt-4 rounded-lg bg-neutral-100 p-4 text-sm text-neutral-700">
+      <span class="font-semibold">現実解</span> — 最初から重装備にしない。まず素直に作り、ドメインの複雑さが見えてきた段階でヘキサゴナル/クリーン系へ移行するのも十分あり。その時に効くのは「どこに業務ルールを書いたか把握していること」で、パターンの名前ではない。
+    </div>
+  </section>
+
+  <!-- まとめ -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">1枚で言える版</h2>
+    <div class="rounded-xl bg-neutral-900 text-neutral-100 p-6 leading-relaxed text-sm">
+      アーキテクチャの目的は<span class="text-indigo-300 font-medium">関心の分離と依存の制御</span>で、歴史は「業務ルールをUI・DB・フレームワークという詳細から守る」方向に進化してきた。<br>
+      <span class="text-sky-300 font-medium">レイヤード</span>は縦積みでシンプルだが、依存が下に素通りしてドメインがDB都合に引きずられやすい。<span class="text-neutral-300 font-medium">MVC</span>はUI層の整理パターンで、これらと併用するもの。<br>
+      <span class="text-violet-300 font-medium">ヘキサゴナル</span>はPort（interface）とAdapter（実装）で外側を差し替え可能にし、<span class="text-amber-300 font-medium">オニオン</span>は同心円で依存を内向きのみに固定、<span class="text-emerald-300 font-medium">クリーン</span>はそれらを依存性のルールで統合した集大成。<br>
+      選び方は投資対効果。単純CRUDならレイヤードで十分、複雑なドメインの長期運用ならクリーン系＋DDD。最初から重装備にせず、複雑さが見えてから移行するのも現実解。
+    </div>
+  </section>
+
+  <!-- チェック -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-4">理解度チェック</h2>
+    <p class="text-sm text-neutral-500 mb-4">まず自分で答えてから開く。</p>
+    <div class="space-y-2">
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">1. レイヤードの弱点は？</summary>
+        <p class="mt-2 text-sm text-neutral-600">依存が下向きに素通りしがちで、domain 層が infrastructure（DBのテーブル構造やORMの都合）に引きずられやすい。シンプルさと引き換えに「業務ルールを守る」力が弱い。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">2. ヘキサゴナルの Port と Adapter とは？</summary>
+        <p class="mt-2 text-sm text-neutral-600">Port ＝ 中心のアプリケーションが定義する interface、Adapter ＝ その外側での実装。DB・外部APIをアダプタとして差し替えられるので、業務ルールをインフラ無しでテストできる。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">3. クリーンアーキテクチャの「依存性のルール」とは？</summary>
+        <p class="mt-2 text-sm text-neutral-600">ソースコードの依存は必ず内側（抽象度の高い方）だけに向ける。内側は外側の存在を知らない。外→内は interface（依存性逆転）で実現する。ヘキサゴナルとオニオンの考えを統合した整理。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">4. どう選ぶ？</summary>
+        <p class="mt-2 text-sm text-neutral-600">複雑さへの投資対効果で選ぶ。単純CRUD・小規模はレイヤードやフレームワーク標準で十分。ドメインが複雑で長期運用ならクリーン系＋DDD。最初から重装備にせず、複雑さが見えてから移行するのも現実解。</p>
+      </details>
+    </div>
+  </section>
+
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-ddd-clean-architecture" class="text-neutral-500 hover:text-neutral-900">‹ DDD と クリーンアーキテクチャ</a><span></span></nav></section>
 <script>
 (function(){
   var bar=document.getElementById('bar'), barTitle=document.getElementById('barTitle');
