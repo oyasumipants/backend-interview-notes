@@ -139,7 +139,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 <p class="text-xs uppercase tracking-widest text-neutral-500">study notes</p>
 <h1 class="mt-2 text-3xl font-bold tracking-tight">バックエンド / インフラ 知識ノート</h1>
 <p class="mt-3 text-neutral-600">Go・AWS/GCP・Next.js・システム設計・Web基礎の要点を、図解で1トピックずつ。</p>
-<div class="mt-4 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-neutral-900 text-white px-3 py-1">38 トピック</span><span class="rounded-full bg-neutral-200 text-neutral-700 px-3 py-1">図解＋理解度チェック</span></div>
+<div class="mt-4 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-neutral-900 text-white px-3 py-1">40 トピック</span><span class="rounded-full bg-neutral-200 text-neutral-700 px-3 py-1">図解＋理解度チェック</span></div>
 </header>
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">Go / 基礎</h2>
 <div class="grid sm:grid-cols-2 gap-3"><a href="#topic-container" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q3</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">コンテナ / VM / カーネル</h3><p class="text-sm text-neutral-500 mt-1">一軒家 vs シェアハウス・namespace・cgroup</p></a><a href="#topic-goroutine" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q7</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">goroutine と 並行/並列</h3><p class="text-sm text-neutral-500 mt-1">M:N多重化・GOMAXPROCS・CSP・Node比較</p></a><a href="#topic-testing" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q4</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">テストを書くメリット</h3><p class="text-sm text-neutral-500 mt-1">table-driven・-race・テストピラミッド</p></a><a href="#topic-cache" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q5</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">RDB / Redis / キャッシュ戦略</h3><p class="text-sm text-neutral-500 mt-1">cache-aside・TTL・thundering herd・index</p></a><a href="#topic-performance" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q6</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">パフォーマンス改善</h3><p class="text-sm text-neutral-500 mt-1">EXPLAIN・offset vs cursor・N+1</p></a><a href="#topic-error-handling" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q8</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">エラーハンドリング</h3><p class="text-sm text-neutral-500 mt-1">if err != nil・%wラップ・panic/recover</p></a><a href="#topic-interface" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q9</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">interface と generics</h3><p class="text-sm text-neutral-500 mt-1">構造的型付け・mock差し替え・generics</p></a><a href="#topic-context" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q10</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">context.Context</h3><p class="text-sm text-neutral-500 mt-1">キャンセル伝播・タイムアウト・リーク事故</p></a><a href="#topic-gc" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q11</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">GC と 低レイテンシ</h3><p class="text-sm text-neutral-500 mt-1">並行GC・p99安定・sync.Pool・言語比較</p></a><a href="#topic-lang-choice" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q12</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">Go / TS / Python の使い分け</h3><p class="text-sm text-neutral-500 mt-1">ワークロード・チーム・運用で選ぶ</p></a></div>
@@ -153,8 +153,8 @@ Check your Browserslist config to be sure that your targets are set up correctly
 <div class="grid sm:grid-cols-2 gap-3"><a href="#topic-read-heavy-api" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q30</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">read-heavy な API</h3><p class="text-sm text-neutral-500 mt-1">cache+リードレプリカ・Aurora/Spanner・なぜGo</p></a><a href="#topic-deploy-observability" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q31</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">デプロイ先と可観測性</h3><p class="text-sm text-neutral-500 mt-1">Fargate vs Cloud Run・メトリクス/ログ/トレース</p></a><a href="#topic-notify-architecture" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q32</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">通知の責務配置</h3><p class="text-sm text-neutral-500 mt-1">UI / API / キューの分担・冪等・順序</p></a><a href="#topic-cap-consistency" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q33</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">CAP と一貫性の選び分け</h3><p class="text-sm text-neutral-500 mt-1">決済CP vs SNS AP・CAP三角</p></a></div>
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">チーム・進め方</h2>
 <div class="grid sm:grid-cols-2 gap-3"><a href="#topic-cost-optimization" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q34</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">コスト最適化の進め方</h3><p class="text-sm text-neutral-500 mt-1">計測で支配項→大きい所から・egress/CDN</p></a><a href="#topic-branch-review" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q35</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">branch戦略・PR粒度・レビュー</h3><p class="text-sm text-neutral-500 mt-1">trunk-based vs git-flow・設計先行</p></a><a href="#topic-first-two-weeks" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q37</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">最初の2週間で信頼を取る</h3><p class="text-sm text-neutral-500 mt-1">郷に従う→小さく早く貢献・信頼残高</p></a></div>
-<h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">補足知識（Web基礎）</h2>
-<div class="grid sm:grid-cols-2 gap-3"><a href="#topic-request-lifecycle" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">リクエストの一生</h3><p class="text-sm text-neutral-500 mt-1">URL入力→DNS→TCP→TLS→LB→サーバ→描画</p></a><a href="#topic-load-balancer" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">ロードバランサ（LB）</h3><p class="text-sm text-neutral-500 mt-1">L4/L7・分散アルゴリズム・ヘルスチェック・TLS終端</p></a><a href="#topic-dns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DNS の仕組み</h3><p class="text-sm text-neutral-500 mt-1">名前解決フロー・レコード種類・TTL/伝播</p></a><a href="#topic-cors" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">CORS と 同一オリジンポリシー</h3><p class="text-sm text-neutral-500 mt-1">SOP・preflight・許可ヘッダ・credentials</p></a><a href="#topic-auth" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">認証と認可</h3><p class="text-sm text-neutral-500 mt-1">OAuth 2.0 / OIDC / JWT・session vs token</p></a></div>
+<h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">補足知識（Web / アーキ）</h2>
+<div class="grid sm:grid-cols-2 gap-3"><a href="#topic-request-lifecycle" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">リクエストの一生</h3><p class="text-sm text-neutral-500 mt-1">URL入力→DNS→TCP→TLS→LB→サーバ→描画</p></a><a href="#topic-load-balancer" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">ロードバランサ（LB）</h3><p class="text-sm text-neutral-500 mt-1">L4/L7・分散アルゴリズム・ヘルスチェック・TLS終端</p></a><a href="#topic-dns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DNS の仕組み</h3><p class="text-sm text-neutral-500 mt-1">名前解決フロー・レコード種類・TTL/伝播</p></a><a href="#topic-cors" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">CORS と 同一オリジンポリシー</h3><p class="text-sm text-neutral-500 mt-1">SOP・preflight・許可ヘッダ・credentials</p></a><a href="#topic-auth" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">認証と認可</h3><p class="text-sm text-neutral-500 mt-1">OAuth 2.0 / OIDC / JWT・session vs token</p></a><a href="#topic-microservices" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">マイクロサービス</h3><p class="text-sm text-neutral-500 mt-1">モノリス比較・独立デプロイ・SAGA・モノリスファースト</p></a><a href="#topic-opentelemetry" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">可観測性</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">OpenTelemetry</h3><p class="text-sm text-neutral-500 mt-1">3本柱・計装標準・Collector・分散トレース</p></a></div>
 </div></section>
 <section id="topic-container" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
 
@@ -8364,7 +8364,473 @@ func e()       { w := 5; go func(){ _ = w }() } // ⑤ 別goroutineが参照 →
     </div>
   </section>
 
-</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-cors" class="text-neutral-500 hover:text-neutral-900">‹ CORS と 同一オリジンポリシー</a><span></span></nav></section>
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-cors" class="text-neutral-500 hover:text-neutral-900">‹ CORS と 同一オリジンポリシー</a><a href="#topic-microservices" class="text-neutral-500 hover:text-neutral-900">マイクロサービス ›</a></nav></section>
+<section id="topic-microservices" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
+
+  
+
+  <header class="mt-3 mb-10">
+    <p class="text-xs uppercase tracking-widest text-neutral-500">補足知識 / アーキテクチャ</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight">マイクロサービス</h1>
+    <p class="mt-3 text-neutral-600">1つの大きなアプリを、独立してデプロイできる小さなサービス群に割る設計。効くのは「何が楽になり、何が難しくなるか」と「いつ割るか」を言えること。</p>
+  </header>
+
+  <!-- モノリス vs マイクロサービス -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">モノリス と マイクロサービス</h2>
+    <p class="text-neutral-600 mb-5">モノリスは全機能を1つのアプリに詰め、DBも1つ。マイクロサービスは機能ごとに小さなサービスへ割り、各サービスが自分のDBを持つ（Database per Service）。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <svg viewBox="0 0 620 250" class="w-full">
+        <!-- モノリス -->
+        <text x="130" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#3730a3">モノリス</text>
+        <rect x="30" y="34" width="200" height="130" rx="10" fill="#e0e7ff" stroke="#4f46e5"/>
+        <g fill="#c7d2fe" stroke="#6366f1">
+          <rect x="48" y="52" width="76" height="30" rx="4"/><rect x="136" y="52" width="76" height="30" rx="4"/>
+          <rect x="48" y="90" width="76" height="30" rx="4"/><rect x="136" y="90" width="76" height="30" rx="4"/>
+        </g>
+        <g fill="#3730a3" font-size="10" text-anchor="middle"><text x="86" y="71">注文</text><text x="174" y="71">在庫</text><text x="86" y="109">決済</text><text x="174" y="109">通知</text></g>
+        <text x="130" y="152" text-anchor="middle" font-size="10" fill="#3730a3">1プロセス・1コードベース</text>
+        <!-- 1つのDB -->
+        <rect x="70" y="190" width="120" height="40" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
+        <text x="130" y="215" text-anchor="middle" font-size="12" font-weight="700" fill="#854d0e">1つのDB</text>
+        <g stroke="#ca8a04" stroke-width="1.5"><line x1="130" y1="164" x2="130" y2="188" marker-end="url(#s38-am1)"/></g>
+
+        <!-- 区切り -->
+        <line x1="310" y1="34" x2="310" y2="230" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+        <!-- マイクロサービス -->
+        <text x="470" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#0369a1">マイクロサービス</text>
+        <g>
+          <rect x="350" y="40" width="110" height="46" rx="8" fill="#e0f2fe" stroke="#0284c7"/><text x="405" y="68" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">注文サービス</text>
+          <rect x="480" y="40" width="110" height="46" rx="8" fill="#e0f2fe" stroke="#0284c7"/><text x="535" y="68" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">在庫サービス</text>
+          <rect x="350" y="150" width="110" height="46" rx="8" fill="#e0f2fe" stroke="#0284c7"/><text x="405" y="178" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">決済サービス</text>
+          <rect x="480" y="150" width="110" height="46" rx="8" fill="#e0f2fe" stroke="#0284c7"/><text x="535" y="178" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">通知サービス</text>
+        </g>
+        <!-- 各サービスのDB -->
+        <g fill="#fef9c3" stroke="#ca8a04">
+          <rect x="367" y="96" width="76" height="22" rx="4"/><rect x="497" y="96" width="76" height="22" rx="4"/>
+          <rect x="367" y="206" width="76" height="22" rx="4"/><rect x="497" y="206" width="76" height="22" rx="4"/>
+        </g>
+        <g fill="#854d0e" font-size="9" text-anchor="middle"><text x="405" y="111">専用DB</text><text x="535" y="111">専用DB</text><text x="405" y="221">専用DB</text><text x="535" y="221">専用DB</text></g>
+        <g stroke="#ca8a04" stroke-width="1.2"><line x1="405" y1="86" x2="405" y2="94" marker-end="url(#s38-am1)"/><line x1="535" y1="86" x2="535" y2="94" marker-end="url(#s38-am1)"/><line x1="405" y1="196" x2="405" y2="204" marker-end="url(#s38-am1)"/><line x1="535" y1="196" x2="535" y2="204" marker-end="url(#s38-am1)"/></g>
+        <defs><marker id="s38-am1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ca8a04"/></marker></defs>
+      </svg>
+      <div class="grid md:grid-cols-2 gap-3 mt-3 text-sm">
+        <div class="rounded-lg bg-neutral-50 border border-neutral-200 p-3"><span class="font-semibold text-indigo-700">モノリス</span><br>1つのアプリに全機能、1つのDB。呼び出しは同一プロセス内の関数呼び出しで速く単純。まとめてデプロイする。</div>
+        <div class="rounded-lg bg-sky-50 border border-sky-200 p-3"><span class="font-semibold text-sky-700">マイクロサービス</span><br>機能ごとに独立サービス。各サービスが自分のDBを持つ（<span class="font-medium">Database per Service</span>）。他サービスのDBを直接触らず、必ずAPI越しに頼む。</div>
+      </div>
+      <div class="mt-3 rounded-lg bg-neutral-100 p-3 text-sm text-neutral-700">
+        <span class="font-semibold">Database per Service が肝</span> — DBを共有すると結局そこで密結合し、独立デプロイできなくなる。DBを分けて初めて各サービスが独立する。その代わりテーブルをまたいだjoinやトランザクションが素直に効かなくなる（後述の整合性の難しさに直結）。
+      </div>
+    </div>
+  </section>
+
+  <!-- メリット / デメリット -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">メリット と デメリット</h2>
+    <p class="text-neutral-600 mb-5">分けることで得られるものと、その代わりに背負うコスト。両方を対で言えると強い。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-3">メリット</h3>
+        <ul class="text-sm text-neutral-600 space-y-2">
+          <li><span class="font-medium text-neutral-800">独立デプロイ</span><br>1サービスだけ直して出せる。全体を止めず小さく速く出せる。</li>
+          <li><span class="font-medium text-neutral-800">独立スケール</span><br>混むサービスだけ台数を増やせる。全部を一律に増やさなくてよい。</li>
+          <li><span class="font-medium text-neutral-800">技術選択の自由</span><br>サービスごとに言語・DBを選べる。重い計算はGo、といった使い分け。</li>
+          <li><span class="font-medium text-neutral-800">障害の局所化</span><br>1サービスが落ちても全体を巻き込みにくい（作り込めば）。</li>
+          <li><span class="font-medium text-neutral-800">チームの自律</span><br>チームがサービスを丸ごと持ち、他を待たず開発・リリースできる。</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-rose-200 bg-white p-4">
+        <h3 class="font-bold text-rose-700 mb-3">デメリット / コスト</h3>
+        <ul class="text-sm text-neutral-600 space-y-2">
+          <li><span class="font-medium text-neutral-800">分散システムの難しさ</span><br>呼び出しがネットワーク越しになり、レイテンシが乗る。相手だけ落ちる<span class="font-medium">部分障害</span>やタイムアウトを常に想定する必要がある。</li>
+          <li><span class="font-medium text-neutral-800">データ整合性</span><br>DBが分かれ、1つのtxで全部を更新できない。複数サービスにまたがる更新は<span class="font-medium">分散トランザクション / SAGA</span>で扱う。</li>
+          <li><span class="font-medium text-neutral-800">運用と可観測性が複雑</span><br>サービスが増えるほど監視・ログ・トレースの対象が増える。どこで詰まったか追う仕組み（分散トレース）が要る。</li>
+          <li><span class="font-medium text-neutral-800">テストが難しい</span><br>単体では動いても、サービスをまたいだ結合の挙動は再現しにくい。</li>
+        </ul>
+      </div>
+    </div>
+    <p class="text-sm text-neutral-600 mt-3">要は「<span class="font-medium">開発・組織のスケーラビリティ</span>を、<span class="font-medium">分散システムの複雑さ</span>で買う」トレードオフ。ここを言えるかが分かれ目。</p>
+  </section>
+
+  <!-- サービス間通信 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">サービス間通信</h2>
+    <p class="text-neutral-600 mb-5">分けたサービスは必ず何かで会話する。同期で今すぐ答えをもらうか、非同期でメッセージを投げて後で処理させるか。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-indigo-200 bg-white p-4">
+        <h3 class="font-bold text-indigo-700 mb-1">同期（REST / gRPC）</h3>
+        <p class="text-sm text-neutral-500 mb-3">呼んで、その場で応答を待つ。素直だが、相手が遅い／落ちるとこちらも待たされる（結合が強い）。</p>
+        <svg viewBox="0 0 360 70" class="w-full">
+          <rect x="20" y="24" width="90" height="34" rx="6" fill="#e0e7ff" stroke="#4f46e5"/><text x="65" y="46" text-anchor="middle" font-size="11" fill="#3730a3">サービスA</text>
+          <line x1="112" y1="35" x2="248" y2="35" stroke="#4f46e5" stroke-width="2" marker-end="url(#s38-asy)"/>
+          <text x="180" y="27" text-anchor="middle" font-size="10" fill="#4338ca">リクエスト</text>
+          <line x1="248" y1="50" x2="112" y2="50" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#s38-asy2)"/>
+          <text x="180" y="66" text-anchor="middle" font-size="10" fill="#64748b">応答を待つ</text>
+          <rect x="250" y="24" width="90" height="34" rx="6" fill="#e0e7ff" stroke="#4f46e5"/><text x="295" y="46" text-anchor="middle" font-size="11" fill="#3730a3">サービスB</text>
+          <defs>
+            <marker id="s38-asy" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4f46e5"/></marker>
+            <marker id="s38-asy2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker>
+          </defs>
+        </svg>
+      </div>
+      <div class="rounded-xl border border-teal-200 bg-white p-4">
+        <h3 class="font-bold text-teal-700 mb-1">非同期（メッセージング / イベント）</h3>
+        <p class="text-sm text-neutral-500 mb-3">キューやトピックにメッセージを置き、相手が自分のペースで拾う。送り手は相手の応答を待たない（結合が緩い）。</p>
+        <svg viewBox="0 0 360 70" class="w-full">
+          <rect x="10" y="24" width="80" height="34" rx="6" fill="#ccfbf1" stroke="#0d9488"/><text x="50" y="46" text-anchor="middle" font-size="11" fill="#115e59">サービスA</text>
+          <line x1="92" y1="41" x2="138" y2="41" stroke="#0d9488" stroke-width="2" marker-end="url(#s38-aas)"/>
+          <rect x="140" y="24" width="80" height="34" rx="6" fill="#fef9c3" stroke="#ca8a04"/><text x="180" y="41" text-anchor="middle" font-size="10" fill="#854d0e">キュー</text><text x="180" y="53" text-anchor="middle" font-size="9" fill="#a16207">/ トピック</text>
+          <line x1="222" y1="41" x2="268" y2="41" stroke="#0d9488" stroke-width="2" marker-end="url(#s38-aas)"/>
+          <rect x="270" y="24" width="80" height="34" rx="6" fill="#ccfbf1" stroke="#0d9488"/><text x="310" y="46" text-anchor="middle" font-size="11" fill="#115e59">サービスB</text>
+          <text x="180" y="16" text-anchor="middle" font-size="9" fill="#a16207">後で拾う</text>
+          <defs><marker id="s38-aas" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#0d9488"/></marker></defs>
+        </svg>
+      </div>
+    </div>
+    <div class="mt-4 rounded-lg bg-neutral-100 p-4 text-sm text-neutral-700">
+      <span class="font-semibold">at-least-once と冪等はここでも同じ話</span> — メッセージングは配送を確実にするため<span class="font-medium">少なくとも1回（at-least-once）</span>で届け、結果として<span class="font-medium">同じメッセージが複数回届きうる</span>。だから受け手は<span class="font-medium">冪等（同じ処理を何度受けても結果が変わらない）</span>に作る。cache や notification のページで出た「重複前提・冪等で吸収」がそのまま効く。
+    </div>
+  </section>
+
+  <!-- 関連パターン -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">よく出る関連パターン</h2>
+    <div class="overflow-hidden rounded-xl border border-neutral-200">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-neutral-100 text-left">
+            <th class="px-4 py-3 font-semibold">パターン</th>
+            <th class="px-4 py-3 font-semibold">役割</th>
+            <th class="px-4 py-3 font-semibold">解決したい課題</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-neutral-100">
+          <tr><td class="px-4 py-3 font-medium text-indigo-700">API Gateway</td><td class="px-4 py-3">入口を1つにまとめる</td><td class="px-4 py-3 text-neutral-600">クライアントが多数のサービスを直接叩かず、認証・ルーティング・集約を入口で担う。</td></tr>
+          <tr class="bg-neutral-50"><td class="px-4 py-3 font-medium text-neutral-700">Service Discovery</td><td class="px-4 py-3">相手の居場所を解決</td><td class="px-4 py-3 text-neutral-600">サービスの台数やIPが動的に変わる中で、呼び先を名前から見つける。</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-rose-700">Circuit Breaker</td><td class="px-4 py-3">障害の伝播を止める</td><td class="px-4 py-3 text-neutral-600">落ちた相手を呼び続けて共倒れするのを防ぐ。失敗が続いたら一旦呼ぶのをやめ、待ってから試す。</td></tr>
+          <tr class="bg-neutral-50"><td class="px-4 py-3 font-medium text-amber-700">SAGA</td><td class="px-4 py-3">分散トランザクション</td><td class="px-4 py-3 text-neutral-600">DBをまたぐ更新を、各サービスのローカルtxの連なりで進め、失敗したら補償（打ち消し）操作で巻き戻す。</td></tr>
+          <tr><td class="px-4 py-3 font-medium text-teal-700">Sidecar / Service Mesh</td><td class="px-4 py-3">通信の共通処理を横に出す</td><td class="px-4 py-3 text-neutral-600">リトライ・暗号化・計測などをアプリ本体から切り離し、各サービスに寄り添うプロキシ（sidecar）へ委ねる。その集合がmesh。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-sm text-neutral-600 mt-3"><span class="font-medium text-rose-700">Circuit Breaker＝障害の伝播を止める</span>、<span class="font-medium text-amber-700">SAGA＝分散トランザクション</span>の2つは名前と役割をセットで即答できるようにしておく。</p>
+  </section>
+
+  <!-- いつ使うか -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">いつ使うか（モノリスファースト）</h2>
+    <p class="text-neutral-600 mb-5">最初からマイクロサービスにすると、分散の複雑さだけ先に払うことになりがち。まずモノリスで始め、必要になってから割るのが定石。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <svg viewBox="0 0 620 120" class="w-full">
+        <!-- Step1 モノリスで始める -->
+        <rect x="20" y="30" width="150" height="60" rx="10" fill="#e0e7ff" stroke="#4f46e5"/>
+        <text x="95" y="56" text-anchor="middle" font-size="12" font-weight="700" fill="#3730a3">① モノリスで始める</text>
+        <text x="95" y="74" text-anchor="middle" font-size="10" fill="#4338ca">速く作れて運用も単純</text>
+        <!-- 矢印 -->
+        <line x1="172" y1="60" x2="228" y2="60" stroke="#6b7280" stroke-width="2" marker-end="url(#s38-aw)"/>
+        <text x="200" y="50" text-anchor="middle" font-size="9" fill="#6b7280">痛みが出たら</text>
+        <!-- Step2 見極め -->
+        <rect x="230" y="30" width="160" height="60" rx="10" fill="#fef9c3" stroke="#ca8a04"/>
+        <text x="310" y="52" text-anchor="middle" font-size="11" font-weight="700" fill="#854d0e">② 割る理由が出たか</text>
+        <text x="310" y="70" text-anchor="middle" font-size="9" fill="#a16207">スケール / 組織の分割 / 独立リリース</text>
+        <!-- 矢印 -->
+        <line x1="392" y1="60" x2="448" y2="60" stroke="#6b7280" stroke-width="2" marker-end="url(#s38-aw)"/>
+        <text x="420" y="50" text-anchor="middle" font-size="9" fill="#6b7280">必要な所だけ</text>
+        <!-- Step3 分割 -->
+        <rect x="450" y="30" width="150" height="60" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="525" y="56" text-anchor="middle" font-size="12" font-weight="700" fill="#0369a1">③ 段階的に分割</text>
+        <text x="525" y="74" text-anchor="middle" font-size="10" fill="#0369a1">痛い境界から切り出す</text>
+        <defs><marker id="s38-aw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker></defs>
+      </svg>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4 mt-4">
+      <div class="rounded-xl border border-rose-200 bg-white p-4">
+        <h3 class="font-bold text-rose-700 mb-1">✗ 最初からマイクロサービス</h3>
+        <p class="text-sm text-neutral-600">サービス境界がまだ分からないうちに割ると、境界がずれて頻繁に作り直す羽目になる。小規模なのに分散の複雑さ（ネットワーク・整合性・運用）だけ先払いになり、過剰になりがち。</p>
+      </div>
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-1">✓ モノリスファースト</h3>
+        <p class="text-sm text-neutral-600">まずモノリスで作り、ドメインの境界が見えてきたところで、スケールや組織の都合で必要なサービスから切り出す。「割らない」のも立派な選択という判断が採点で効く。</p>
+      </div>
+    </div>
+    <p class="text-sm text-neutral-600 mt-3">聞かれたら「<span class="font-medium">要件次第。多くはモノリスで十分で、スケールや組織が理由になって初めて割る</span>」と、目的から逆算して答えられるようにする。技術の流行ではなく課題ドリブンで語る。</p>
+  </section>
+
+  <!-- まとめ -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">1枚で言える版</h2>
+    <div class="rounded-xl bg-neutral-900 text-neutral-100 p-6 leading-relaxed text-sm">
+      マイクロサービスは、全機能を1つに詰めた<span class="text-indigo-300 font-medium">モノリス</span>を、独立してデプロイできる小さなサービス群に割る設計。各サービスが自分のDBを持つ<span class="text-amber-300 font-medium">Database per Service</span>が肝。<br>
+      得られるのは<span class="text-emerald-300 font-medium">独立デプロイ・独立スケール・技術選択の自由・障害の局所化・チームの自律</span>。代わりに<span class="text-rose-300 font-medium">分散システムの難しさ（レイテンシ・部分障害）・データ整合性・運用と可観測性・テスト</span>のコストを背負う。開発と組織のスケーラビリティを分散の複雑さで買うトレードオフ。<br>
+      通信は<span class="text-sky-300 font-medium">同期（REST/gRPC）</span>か<span class="text-teal-300 font-medium">非同期（メッセージング/イベント）</span>。非同期はat-least-onceで重複するので受け手は冪等に作る。<br>
+      関連パターンは<span class="text-indigo-300 font-medium">API Gateway・Service Discovery・Circuit Breaker（障害伝播を止める）・SAGA（分散トランザクション）・Sidecar/Service Mesh</span>。<br>
+      判断は<span class="text-emerald-300 font-medium">モノリスファースト</span>。まずモノリスで始め、スケールや組織の都合で必要になったら段階的に割る。最初からマイクロサービスは過剰になりがち。
+    </div>
+  </section>
+
+  <!-- チェック -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-4">理解度チェック</h2>
+    <p class="text-sm text-neutral-500 mb-4">まず自分で答えてから開く。</p>
+    <div class="space-y-2">
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">1. モノリスとマイクロサービスの違いを一言で？</summary>
+        <p class="mt-2 text-sm text-neutral-600">モノリスは全機能を1つのアプリ＋1つのDBに詰める。マイクロサービスは機能ごとに独立デプロイできる小さなサービスへ割り、各サービスが自分のDBを持つ（Database per Service）。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">2. マイクロサービスのメリットとデメリットを対で？</summary>
+        <p class="mt-2 text-sm text-neutral-600">メリットは独立デプロイ・独立スケール・技術選択の自由・障害の局所化・チームの自律。デメリットは分散システムの難しさ（レイテンシ・部分障害）・データ整合性（分散トランザクション/SAGA）・運用と可観測性の複雑さ・テストの難しさ。開発と組織のスケーラビリティを分散の複雑さで買うトレードオフ。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">3. 非同期通信で受け手を冪等に作るのはなぜ？</summary>
+        <p class="mt-2 text-sm text-neutral-600">メッセージングはat-least-onceで届けるため同じメッセージが複数回届きうる。冪等（同じ処理を何度受けても結果が変わらない）にしておけば、重複しても壊れず吸収できる。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">4. 最初からマイクロサービスにしない理由は？</summary>
+        <p class="mt-2 text-sm text-neutral-600">サービス境界がまだ見えないうちに割ると境界がずれて作り直しになり、規模も小さいのに分散の複雑さだけ先払いになって過剰になりがち。まずモノリスで始め、スケールや組織の都合で必要になったら段階的に割る（モノリスファースト）。</p>
+      </details>
+    </div>
+  </section>
+
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-auth" class="text-neutral-500 hover:text-neutral-900">‹ 認証と認可</a><a href="#topic-opentelemetry" class="text-neutral-500 hover:text-neutral-900">OpenTelemetry ›</a></nav></section>
+<section id="topic-opentelemetry" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
+
+  
+
+  <header class="mt-3 mb-10">
+    <p class="text-xs uppercase tracking-widest text-neutral-500">補足知識 / 可観測性</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight">OpenTelemetry</h1>
+    <p class="mt-3 text-neutral-600">計装を一度書けば、送り先はあとで差し替えられる。ベンダー中立の共通仕様として、可観測性のデータをどう作り、どう運ぶかを絵で追う。</p>
+  </header>
+
+  <!-- 可観測性の3本柱（おさらい） -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">まず土台 — 可観測性の3本柱</h2>
+    <p class="text-neutral-600 mb-5">OpenTelemetry が扱うのはこの3種類のデータ（テレメトリ）。ここでは軽くおさらいに留める。</p>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="rounded-xl border border-indigo-200 bg-white p-4">
+        <div class="text-2xl mb-2">📈</div>
+        <h3 class="font-bold text-indigo-700">メトリクス</h3>
+        <p class="text-sm text-neutral-600 mt-2">数値の時系列。代表が <span class="font-medium">RED</span>（Rate＝流量 / Errors＝エラー率 / Duration＝処理時間）。全体の傾向を掴む。</p>
+      </div>
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <div class="text-2xl mb-2">📝</div>
+        <h3 class="font-bold text-emerald-700">ログ</h3>
+        <p class="text-sm text-neutral-600 mt-2">起きた出来事の記録。構造化イベント（キー値のJSON等）にしておくと後から検索・集計しやすい。</p>
+      </div>
+      <div class="rounded-xl border border-amber-200 bg-white p-4">
+        <div class="text-2xl mb-2">🧵</div>
+        <h3 class="font-bold text-amber-700">トレース</h3>
+        <p class="text-sm text-neutral-600 mt-2">1リクエストがどのサービスをどう通ったかの経路。どこで時間を使ったかが見える。</p>
+      </div>
+    </div>
+    <div class="mt-4 rounded-lg bg-neutral-100 p-4 text-sm text-neutral-700">
+      3本柱そのものの詳しい話は <a href="#topic-deploy-observability" class="font-medium text-indigo-700 underline decoration-indigo-300 hover:decoration-indigo-500">deploy-observability.html</a> へ。ここでは「その3つを共通の形で作って運ぶ道具」が OpenTelemetry、という位置づけで進める。
+    </div>
+  </section>
+
+  <!-- OTel とは -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">OpenTelemetry（OTel）とは</h2>
+    <p class="text-neutral-600 mb-5">アプリに監視用のコードを埋め込むこと（計装＝instrumentation）の、ベンダー中立な標準。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-5">
+      <p class="text-sm text-neutral-700 leading-relaxed">
+        テレメトリ（メトリクス・ログ・トレース）の <span class="font-medium">生成・収集・エクスポート</span> をどう行うかの共通仕様と、それを実装した各言語の <span class="font-medium">SDK</span> をまとめて提供する。特定の監視ツールに紐づかないので、「どう計測するか」と「どこに送るか」を切り離せるのが要点。
+      </p>
+      <div class="grid md:grid-cols-3 gap-3 mt-4 text-sm">
+        <div class="rounded-lg bg-neutral-50 border border-neutral-200 p-3"><span class="font-semibold">生成</span><br>アプリ側でスパンやメトリクスを作る（API / SDK で計装）。</div>
+        <div class="rounded-lg bg-neutral-50 border border-neutral-200 p-3"><span class="font-semibold">収集</span><br>作ったデータを集める（Collector が受け取る）。</div>
+        <div class="rounded-lg bg-neutral-50 border border-neutral-200 p-3"><span class="font-semibold">エクスポート</span><br>好きなバックエンドへ送り出す（送り先は差し替え可能）。</div>
+      </div>
+      <p class="text-xs text-neutral-500 mt-3">CNCF のプロジェクトで、OpenTracing と OpenCensus が合流してできた。今は分散トレースまわりの事実上の標準になっている。</p>
+    </div>
+  </section>
+
+  <!-- なぜ嬉しいか -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">なにが嬉しいのか</h2>
+    <p class="text-neutral-600 mb-5">監視ツールごとに計装をやり直す手間と、ベンダーロックインから抜けられる。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-rose-200 bg-white p-4">
+        <h3 class="font-bold text-rose-700 mb-1">✗ ツール専用に計装する</h3>
+        <p class="text-sm text-neutral-600 mb-3">Datadog 用、New Relic 用と、監視ツールごとに専用ライブラリでコードを埋め込む。ツールを変えると計装を全部やり直し。＝<span class="font-medium">ベンダーロックイン</span>。</p>
+        <svg viewBox="0 0 360 130" class="w-full">
+          <rect x="130" y="12" width="100" height="34" rx="6" fill="#ffe4e6" stroke="#e11d48"/>
+          <text x="180" y="33" text-anchor="middle" font-size="12" font-weight="700" fill="#9f1239">アプリ</text>
+          <g stroke="#e11d48" stroke-width="1.5">
+            <line x1="150" y1="46" x2="70" y2="92" marker-end="url(#s39-ra)"/>
+            <line x1="180" y1="46" x2="180" y2="92" marker-end="url(#s39-ra)"/>
+            <line x1="210" y1="46" x2="290" y2="92" marker-end="url(#s39-ra)"/>
+          </g>
+          <text x="180" y="66" text-anchor="middle" font-size="9" fill="#9f1239">各ツール専用の計装（3通り書く）</text>
+          <g fill="#fff1f2" stroke="#e11d48"><rect x="30" y="94" width="78" height="28" rx="5"/><rect x="141" y="94" width="78" height="28" rx="5"/><rect x="252" y="94" width="78" height="28" rx="5"/></g>
+          <g fill="#9f1239" font-size="10" text-anchor="middle"><text x="69" y="112">Datadog</text><text x="180" y="112">New Relic</text><text x="291" y="112">Jaeger</text></g>
+          <defs><marker id="s39-ra" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#e11d48"/></marker></defs>
+        </svg>
+      </div>
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-1">✓ OTel で一度だけ計装する</h3>
+        <p class="text-sm text-neutral-600 mb-3">アプリの計装は OTel の書き方で一度きり。送り先を変えたくなっても、<span class="font-medium">エクスポート先の設定を差し替えるだけ</span>でコードは触らない。</p>
+        <svg viewBox="0 0 360 130" class="w-full">
+          <rect x="130" y="12" width="100" height="34" rx="6" fill="#d1fae5" stroke="#059669"/>
+          <text x="180" y="33" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">アプリ</text>
+          <line x1="180" y1="46" x2="180" y2="62" stroke="#059669" stroke-width="2" marker-end="url(#s39-ea)"/>
+          <rect x="120" y="64" width="120" height="26" rx="5" fill="#ecfeff" stroke="#0891b2"/>
+          <text x="180" y="81" text-anchor="middle" font-size="10" font-weight="600" fill="#155e75">OTel（1回の計装）</text>
+          <g stroke="#059669" stroke-width="1.5">
+            <line x1="150" y1="90" x2="70" y2="104" marker-end="url(#s39-ea)"/>
+            <line x1="180" y1="90" x2="180" y2="104" marker-end="url(#s39-ea)"/>
+            <line x1="210" y1="90" x2="290" y2="104" marker-end="url(#s39-ea)"/>
+          </g>
+          <g fill="#ecfdf5" stroke="#059669"><rect x="30" y="104" width="78" height="22" rx="5"/><rect x="141" y="104" width="78" height="22" rx="5"/><rect x="252" y="104" width="78" height="22" rx="5"/></g>
+          <g fill="#065f46" font-size="10" text-anchor="middle"><text x="69" y="119">Datadog</text><text x="180" y="119">New Relic</text><text x="291" y="119">Jaeger</text></g>
+          <defs><marker id="s39-ea" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#059669"/></marker></defs>
+        </svg>
+      </div>
+    </div>
+    <p class="text-sm text-neutral-600 mt-3">同じ計装のまま、CloudWatch や Prometheus など送り先を後から足したり乗り換えたりできる。「計測の書き方」を仕様として固定したのが効いている。</p>
+  </section>
+
+  <!-- 構成の図 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">構成 — アプリ・Collector・バックエンド</h2>
+    <p class="text-neutral-600 mb-5">アプリで作ったテレメトリを Collector が受け、加工して各バックエンドへ流す。運搬に使う共通プロトコルが OTLP。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <svg viewBox="0 0 620 250" class="w-full">
+        <!-- アプリ -->
+        <rect x="20" y="90" width="150" height="70" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="95" y="118" text-anchor="middle" font-size="14" font-weight="700" fill="#0369a1">アプリ</text>
+        <text x="95" y="137" text-anchor="middle" font-size="10" fill="#0369a1">OTel API / SDK</text>
+        <text x="95" y="151" text-anchor="middle" font-size="10" fill="#0369a1">で計装</text>
+        <!-- アプリ→Collector -->
+        <line x1="170" y1="125" x2="248" y2="125" stroke="#6b7280" stroke-width="2" marker-end="url(#s39-ca)"/>
+        <text x="209" y="116" text-anchor="middle" font-size="10" font-weight="600" fill="#374151">OTLP</text>
+        <!-- Collector -->
+        <rect x="250" y="70" width="150" height="110" rx="8" fill="#ecfeff" stroke="#0891b2"/>
+        <text x="325" y="94" text-anchor="middle" font-size="14" font-weight="700" fill="#155e75">OTel Collector</text>
+        <g fill="#155e75" font-size="10" text-anchor="middle">
+          <text x="325" y="118">受信（receive）</text>
+          <text x="325" y="138">処理（batch / 加工）</text>
+          <text x="325" y="158">送出（export）</text>
+        </g>
+        <!-- Collector→バックエンド -->
+        <g stroke="#6b7280" stroke-width="2">
+          <line x1="400" y1="95" x2="478" y2="55" marker-end="url(#s39-ca)"/>
+          <line x1="400" y1="125" x2="478" y2="125" marker-end="url(#s39-ca)"/>
+          <line x1="400" y1="155" x2="478" y2="195" marker-end="url(#s39-ca)"/>
+        </g>
+        <text x="470" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#4b5563">複数バックエンド</text>
+        <!-- バックエンド3つ -->
+        <rect x="480" y="36" width="120" height="38" rx="6" fill="#ffe4e6" stroke="#e11d48"/>
+        <text x="540" y="60" text-anchor="middle" font-size="12" fill="#9f1239">Jaeger（trace）</text>
+        <rect x="480" y="106" width="120" height="38" rx="6" fill="#fef3c7" stroke="#d97706"/>
+        <text x="540" y="130" text-anchor="middle" font-size="12" fill="#92400e">Prometheus</text>
+        <rect x="480" y="176" width="120" height="38" rx="6" fill="#ede9fe" stroke="#7c3aed"/>
+        <text x="540" y="200" text-anchor="middle" font-size="12" fill="#5b21b6">Datadog 等</text>
+        <defs><marker id="s39-ca" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker></defs>
+      </svg>
+      <p class="text-sm text-neutral-600 mt-2 px-1">Collector を挟むと、送り先の追加や切り替え・サンプリング・整形をアプリの外側でまとめて調整できる。<span class="font-medium">OTLP</span>（OpenTelemetry Protocol）はこの区間の標準的な運搬形式。アプリから直接バックエンドへ送る構成も取れるが、Collector を置くと運用が楽になる。</p>
+    </div>
+  </section>
+
+  <!-- 分散トレース -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">分散トレースの概念 — Trace と Span</h2>
+    <p class="text-neutral-600 mb-5">1リクエストが複数サービスを跨いでも、1本の経路として繋げて見るための仕組み。</p>
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <div class="rounded-xl border border-indigo-200 bg-white p-4">
+        <h3 class="font-bold text-indigo-700 mb-1">Trace ＝ 1リクエスト全体</h3>
+        <p class="text-sm text-neutral-600">受け付けてから返すまでの、一連の処理のまとまり。全体で1つの <span class="font-mono text-xs bg-neutral-100 px-1 rounded">Trace ID</span> を持つ。</p>
+      </div>
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-1">Span ＝ 各処理の単位</h3>
+        <p class="text-sm text-neutral-600">「DBへ問い合わせ」など個々の処理。<span class="font-mono text-xs bg-neutral-100 px-1 rounded">Span ID</span> を持ち、親スパンを指すことで<span class="font-medium">親子関係（ツリー）</span>になる。</p>
+      </div>
+    </div>
+
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <p class="text-sm font-medium mb-3">スパンの親子ツリー（1つの Trace の中身。横軸＝時間、入れ子＝親子）</p>
+      <svg viewBox="0 0 620 220" class="w-full">
+        <text x="10" y="18" font-size="11" font-weight="600" fill="#3730a3">Trace ID ＝ a1b2… （下の全スパンで共通）</text>
+        <!-- root -->
+        <rect x="10" y="30" width="580" height="26" rx="4" fill="#c7d2fe" stroke="#4f46e5"/>
+        <text x="20" y="47" font-size="11" fill="#3730a3">span: GET /order　（root・service ＝ api-gateway）</text>
+        <!-- child 1: auth -->
+        <rect x="40" y="62" width="120" height="24" rx="4" fill="#e0e7ff" stroke="#6366f1"/>
+        <text x="50" y="78" font-size="10" fill="#3730a3">auth check</text>
+        <!-- child 2: order-svc -->
+        <rect x="40" y="92" width="380" height="24" rx="4" fill="#d1fae5" stroke="#059669"/>
+        <text x="50" y="108" font-size="10" fill="#065f46">call order-svc　（別サービス）</text>
+        <!-- grandchild: db -->
+        <rect x="70" y="122" width="200" height="24" rx="4" fill="#ecfdf5" stroke="#10b981"/>
+        <text x="80" y="138" font-size="10" fill="#065f46">SELECT orders（DB）</text>
+        <!-- child 3: payment -->
+        <rect x="40" y="152" width="180" height="24" rx="4" fill="#fef3c7" stroke="#d97706"/>
+        <text x="50" y="168" font-size="10" fill="#92400e">call payment-svc　（別サービス）</text>
+        <!-- 時間軸 -->
+        <line x1="10" y1="188" x2="590" y2="188" stroke="#cbd5e1" stroke-width="1" marker-end="url(#s39-ta)"/>
+        <text x="10" y="205" font-size="10" fill="#6b7280">時間 →（各スパンの長さ＝その処理にかかった時間）</text>
+        <defs><marker id="s39-ta" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#cbd5e1"/></marker></defs>
+      </svg>
+      <p class="text-sm text-neutral-600 mt-2 px-1">各スパンは「自分の親は誰か」を持つので、ネストしたツリーとして復元できる。どのスパンが長いかで<span class="font-medium">遅い箇所が一目で分かる</span>。</p>
+    </div>
+
+    <div class="mt-4 rounded-xl border border-sky-200 bg-white p-5">
+      <h3 class="font-bold text-sky-700 mb-2">Context Propagation ＝ サービスを跨いで繋ぐ</h3>
+      <p class="text-sm text-neutral-600 mb-3">サービスAがサービスBを呼ぶとき、リクエストに <span class="font-medium">Trace ID と親 Span ID を載せて渡す</span>。受けたB側はそれを親として自分のスパンを作るので、別プロセスでも1本のトレースに繋がる。この受け渡しの標準が <span class="font-medium">W3C Trace Context</span>（HTTPの <span class="font-mono text-xs bg-neutral-100 px-1 rounded">traceparent</span> ヘッダ）。</p>
+      <svg viewBox="0 0 620 70" class="w-full">
+        <rect x="20" y="20" width="130" height="34" rx="6" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="85" y="41" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">サービスA</text>
+        <line x1="150" y1="37" x2="330" y2="37" stroke="#0284c7" stroke-width="2" marker-end="url(#s39-pa)"/>
+        <text x="240" y="28" text-anchor="middle" font-size="10" fill="#0369a1">traceparent（trace ID + 親 span ID）</text>
+        <rect x="332" y="20" width="130" height="34" rx="6" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="397" y="41" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">サービスB</text>
+        <text x="500" y="41" font-size="10" fill="#6b7280">同じ trace に連結</text>
+        <defs><marker id="s39-pa" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#0284c7"/></marker></defs>
+      </svg>
+      <div class="mt-3 rounded-lg bg-neutral-100 p-3 text-sm text-neutral-700">
+        Go では、この「今どのスパンの中か」という文脈を <span class="font-mono text-xs bg-white border border-neutral-200 px-1 rounded">context.Context</span> に載せて引き回す。関数やHTTP呼び出しに ctx を渡していく設計がそのまま伝播に効く。ctx の基礎は <a href="#topic-context" class="font-medium text-indigo-700 underline decoration-indigo-300 hover:decoration-indigo-500">context.html</a> へ。
+      </div>
+    </div>
+  </section>
+
+  <!-- まとめ -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">1枚で言える版</h2>
+    <div class="rounded-xl bg-neutral-900 text-neutral-100 p-6 leading-relaxed text-sm">
+      可観測性のデータ（メトリクス・ログ・トレース）を、特定ツールに縛られず作って運ぶための<span class="text-sky-300 font-medium">ベンダー中立の計装標準</span>が OpenTelemetry。<br>
+      アプリは <span class="text-emerald-300 font-medium">OTel API / SDK で一度だけ計装</span>し、<span class="text-cyan-300 font-medium">OTel Collector</span> が受信・加工して各バックエンド（Jaeger / Prometheus / Datadog 等）へ<span class="text-cyan-300 font-medium">OTLP</span>で送る。送り先の差し替えは設定だけで済み、ロックインを避けられる。<br>
+      分散トレースは <span class="text-indigo-300 font-medium">Trace</span>（1リクエスト全体）と <span class="text-emerald-300 font-medium">Span</span>（各処理・親子関係を持つ）で表し、<span class="text-amber-300 font-medium">Context Propagation</span>（W3C Trace Context）でサービスを跨いで trace ID を伝播して1本に繋ぐ。<br>
+      Go なら <span class="text-emerald-300 font-medium">context.Context</span> で trace を引き回すのが素直。
+    </div>
+  </section>
+
+  <!-- チェック -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-4">理解度チェック</h2>
+    <p class="text-sm text-neutral-500 mb-4">まず自分で答えてから開く。</p>
+    <div class="space-y-2">
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">1. OpenTelemetry を一言で？</summary>
+        <p class="mt-2 text-sm text-neutral-600">メトリクス・ログ・トレースを、特定の監視ツールに依存しない共通の形で生成・収集・エクスポートするための、ベンダー中立な計装標準と各言語SDK。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">2. OTel で計装すると何が嬉しい？</summary>
+        <p class="mt-2 text-sm text-neutral-600">監視ツールごとに計装をやり直さずに済む。一度 OTel で書けば、送り先はエクスポート設定の差し替えだけで変えられ、ベンダーロックインを避けられる。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">3. Trace と Span の関係は？</summary>
+        <p class="mt-2 text-sm text-neutral-600">Trace ＝ 1リクエスト全体（共通の Trace ID）。Span ＝ その中の個々の処理単位（Span ID を持ち、親スパンを指して親子ツリーになる）。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">4. Context Propagation とは？</summary>
+        <p class="mt-2 text-sm text-neutral-600">サービスを跨ぐ呼び出しで trace ID と親 span ID を受け渡し、別プロセスでも1本のトレースに繋ぐ仕組み。標準は W3C Trace Context（traceparent ヘッダ）。Go では context.Context に載せて引き回す。</p>
+      </details>
+    </div>
+  </section>
+
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-microservices" class="text-neutral-500 hover:text-neutral-900">‹ マイクロサービス</a><span></span></nav></section>
 <script>
 (function(){
   var bar=document.getElementById('bar'), barTitle=document.getElementById('barTitle');
