@@ -4866,9 +4866,61 @@ func e()       { w := 5; go func(){ _ = w }() } // ⑤ 別goroutineが参照 →
     <p class="mt-3 text-neutral-600">どのアルゴリズムで数え、複数インスタンスでどう状態を共有し、超過をどう返すか。token bucket・レース対策・429 までを絵で追う。</p>
   </header>
 
+  <!-- そもそも -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">そもそも「レートリミット」とは</h2>
+    <p class="text-neutral-600 mb-5">「1人あたり、1秒間にN回まで」という回数制限。数えて、上限以内なら通し、超えたら <code class="text-sm bg-neutral-100 px-1 rounded">429 Too Many Requests</code> で弾く門番。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <h3 class="font-bold text-neutral-800 mb-2">なぜ制限するのか</h3>
+        <ul class="text-sm text-neutral-600 space-y-1 list-disc list-inside">
+          <li><span class="font-medium">過負荷から守る</span> — 1人が秒1万リクエスト投げたら全員が道連れ（可用性）</li>
+          <li><span class="font-medium">公平性</span> — 1人に資源を独占させない</li>
+          <li><span class="font-medium">悪意対策</span> — パスワード総当たり・スクレイピング・bot</li>
+          <li><span class="font-medium">コスト / ビジネス</span> — 従量課金APIの防衛、料金プランで回数を差別化</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-neutral-200 bg-white p-4">
+        <h3 class="font-bold text-neutral-800 mb-2">身近な例</h3>
+        <ul class="text-sm text-neutral-600 space-y-1 list-disc list-inside">
+          <li>GitHub API の「5,000リクエスト/時」</li>
+          <li>LLM API の RPM（Requests Per Minute〔分あたりリクエスト数〕）制限</li>
+          <li>超えると <code class="text-xs bg-neutral-100 px-1 rounded">429</code> ＋ <code class="text-xs bg-neutral-100 px-1 rounded">Retry-After</code>（何秒後に再試行してよいか）が返る</li>
+        </ul>
+        <p class="text-xs text-neutral-500 mt-2">例えるなら遊園地の入場ゲート。「1分間に100人まで」と入口で数えて、園内（サーバ）がパンクしないように止める。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- なぜ「分散」か -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">なぜ「分散」レートリミッターになるのか</h2>
+    <p class="text-neutral-600 mb-5">サーバ1台なら自分のメモリで数えれば済む。しかし水平スケールでサーバが複数台になり、LBが毎回違うサーバへ振り分けると、<span class="font-medium">各サーバの手元のカウントでは全体の合計が見えない</span>。</p>
+    <div class="rounded-xl border border-rose-200 bg-white p-5 mb-4">
+      <p class="text-sm font-medium text-rose-700 mb-3">各サーバが自分のメモリで数えると（ルール = 10回/秒）</p>
+      <div class="grid grid-cols-3 gap-3 text-center text-sm">
+        <div class="rounded-lg bg-rose-50 border border-rose-200 p-3">サーバA<br><span class="text-xs text-neutral-500">「7回しか見てない、通す」</span></div>
+        <div class="rounded-lg bg-rose-50 border border-rose-200 p-3">サーバB<br><span class="text-xs text-neutral-500">「8回しか見てない、通す」</span></div>
+        <div class="rounded-lg bg-rose-50 border border-rose-200 p-3">サーバC<br><span class="text-xs text-neutral-500">「9回しか見てない、通す」</span></div>
+      </div>
+      <p class="text-sm text-neutral-700 mt-3">実際は 7+8+9 ＝ <span class="font-semibold text-rose-700">24回通過</span>。10回制限のはずが、3台なら実質30回まで素通りする。</p>
+    </div>
+    <div class="rounded-xl border border-teal-200 bg-white p-5">
+      <p class="text-sm font-medium text-teal-700 mb-3">解決 ＝ カウンタを1か所（Redis）に集約し、全サーバがそこを見る</p>
+      <div class="flex items-center justify-center gap-3 text-sm flex-wrap">
+        <div class="rounded-lg bg-neutral-100 border border-neutral-300 px-3 py-2">サーバA</div>
+        <div class="rounded-lg bg-neutral-100 border border-neutral-300 px-3 py-2">サーバB</div>
+        <div class="rounded-lg bg-neutral-100 border border-neutral-300 px-3 py-2">サーバC</div>
+        <span class="text-neutral-400">→</span>
+        <div class="rounded-lg bg-teal-50 border-2 border-teal-400 px-4 py-2 font-semibold text-teal-800">Redis のカウンタ（唯一の正）</div>
+      </div>
+      <p class="text-xs text-neutral-500 mt-3">これは「状態をサーバの外に出してステートレスに保つ」（セッションをRedisに出すのと同じ発想、<a href="#topic-scaling" class="text-teal-700 underline underline-offset-2 hover:text-teal-900">スケールの一般論</a>）。カウンタという状態をRedisへ出したものが分散レートリミッター。ただし共有すると複数サーバの同時読み書きが競合する（<a href="#topic-goroutine" class="text-teal-700 underline underline-offset-2 hover:text-teal-900">counter++ が壊れる話</a>と同じ）ので、後述のアトミック操作で守る。</p>
+    </div>
+  </section>
+
   <!-- アルゴリズム比較 -->
   <section class="mb-14">
-    <h2 class="text-xl font-bold mb-1">アルゴリズムの比較</h2>
+    <h2 class="text-xl font-bold mb-1">アルゴリズムの比較（＝「直近N回」をどう数えるかの流儀）</h2>
     <p class="text-neutral-600 mb-5">「どう数えるか」で挙動が変わる。バーストをどこまで許すか、精度とメモリのどちらを取るかがポイント。</p>
     <div class="overflow-hidden rounded-xl border border-neutral-200">
       <table class="w-full text-sm">
