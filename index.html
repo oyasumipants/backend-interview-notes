@@ -792,6 +792,41 @@ Check your Browserslist config to be sure that your targets are set up correctly
       </div>
       <p class="text-xs text-neutral-500 mt-3">Goは全コアに散って約10倍。Nodeは単一イベントループで詰まる。PythonはGILで壊滅。※I/OだけならGo/Node/Pythonはほぼ横並び＝「Goが常に速い」ではない。</p>
     </div>
+
+    <div class="rounded-xl border border-neutral-200 bg-white p-5 mt-4">
+      <p class="text-sm font-medium mb-3">3ワークロード × 3言語の実測（rps ／ p99 ms）— concurrency 50・10秒</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead><tr class="text-left border-b border-neutral-200">
+            <th class="py-2 pr-3 font-semibold">ワークロード</th>
+            <th class="py-2 px-2 font-semibold text-emerald-700">Go</th>
+            <th class="py-2 px-2 font-semibold">Node(TS)</th>
+            <th class="py-2 px-2 font-semibold">Python</th>
+          </tr></thead>
+          <tbody class="divide-y divide-neutral-100">
+            <tr class="bg-sky-50">
+              <td class="py-2 pr-3 font-medium">I/O bound<br><span class="text-xs text-neutral-500">sleep 20ms・CPU 0</span></td>
+              <td class="py-2 px-2">2,235 <span class="text-xs text-neutral-400">/ 30.1</span></td>
+              <td class="py-2 px-2 font-semibold text-sky-700">2,287 <span class="text-xs text-neutral-400">/ 25.6</span></td>
+              <td class="py-2 px-2">2,066 <span class="text-xs text-neutral-400">/ 30.0</span></td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-3 font-medium">CPU bound<br><span class="text-xs text-neutral-500">sqrt 80万・IO 0</span></td>
+              <td class="py-2 px-2 font-semibold text-emerald-700">20,361 <span class="text-xs text-neutral-400">/ 13.8</span></td>
+              <td class="py-2 px-2">1,942 <span class="text-xs text-neutral-400">/ 50.4</span></td>
+              <td class="py-2 px-2 text-rose-600">29 <span class="text-xs text-rose-400">/ 5040</span></td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-3 font-medium">mixed<br><span class="text-xs text-neutral-500">IO 20ms + CPU 15万</span></td>
+              <td class="py-2 px-2">1,900 <span class="text-xs text-neutral-400">/ 38.3</span></td>
+              <td class="py-2 px-2">1,786 <span class="text-xs text-neutral-400">/ 35.0</span></td>
+              <td class="py-2 px-2">153 <span class="text-xs text-neutral-400">/ 753</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-xs text-neutral-600 mt-3"><span class="font-medium text-sky-700">I/O bound では Node(TS) が Go と互角（p99 はむしろ Node が良い）</span>。差がつくのは CPU bound だけ。AI Agent の処理はほぼ I/O bound（LLM API 待ち・ツール呼び出し・DB）なので、Node が噛み合う領域。</p>
+    </div>
   </section>
 
   <!-- まとめ -->
@@ -2422,6 +2457,34 @@ func e()       { w := 5; go func(){ _ = w }() } // ⑤ 別goroutineが参照 →
       <p class="text-indigo-900 leading-relaxed">「言語は宗教でなく、<span class="font-semibold">ワークロード・チーム・エコシステム・運用</span>で決める。同じ会社でも<span class="font-semibold">適材適所で混在</span>させる」</p>
     </div>
     <p class="text-sm text-neutral-600 mt-3">面接で「好きな言語は」と聞かれても、好みではなく判断軸で答えると評価が上がります。「この処理はCPU boundなのでGo」「ここはML資産が要るのでPython」と、理由を軸に紐づけて話すのが狙いです。</p>
+  </section>
+
+  <!-- AI Agent と TS -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">AI Agent / LLM 開発で TS が選ばれる理由</h2>
+    <p class="text-neutral-600 mb-5">近年の AI エージェント開発では TypeScript(Node) がよく採用される。ワークロードとエコシステムの両面で噛み合う。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-sky-200 bg-white p-4">
+        <h3 class="font-bold text-sky-700 mb-2">ワークロードが I/O bound</h3>
+        <ul class="text-sm text-neutral-600 space-y-1 list-disc list-inside">
+          <li>処理の大半は LLM API の応答待ち・ツール呼び出し・DBアクセス＝待ち</li>
+          <li>重いCPU計算はしない（推論は LLM / GPU 側）</li>
+          <li>だから Node のイベントループが得意な領域。実測でも純I/OではGoとNodeは互角（<a href="#topic-goroutine" class="text-sky-700 underline underline-offset-2 hover:text-sky-900">goroutine の比較表</a>）</li>
+          <li>ストリーミング応答（SSE）が書きやすい</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-2">エコシステムが TS/JS 中心</h3>
+        <ul class="text-sm text-neutral-600 space-y-1 list-disc list-inside">
+          <li>LLM/エージェントのライブラリが TS ファースト（LangChain.js・Vercel AI SDK・Mastra 等）</li>
+          <li>型でツール定義や入出力スキーマ（zod 等）を安全に書ける</li>
+          <li>フロント（チャットUI）と言語統一＝フルスタックTS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-4 rounded-lg bg-neutral-100 p-4 text-sm text-neutral-700">
+      <span class="font-semibold">まとめ</span> — AI Agent は I/O bound が主なので Node が噛み合い、AI/LLM ツールも TS 中心。CPU が重い処理が要る部分だけ Go 等に切り出す、という適材適所が現実的。
+    </div>
   </section>
 
   <!-- まとめ -->
