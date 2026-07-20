@@ -139,7 +139,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 <p class="text-xs uppercase tracking-widest text-neutral-500">study notes</p>
 <h1 class="mt-2 text-3xl font-bold tracking-tight">バックエンド / インフラ 知識ノート</h1>
 <p class="mt-3 text-neutral-600">Go・AWS/GCP・Next.js・システム設計・Web基礎の要点を、図解で1トピックずつ。</p>
-<div class="mt-4 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-neutral-900 text-white px-3 py-1">54 トピック</span><span class="rounded-full bg-neutral-200 text-neutral-700 px-3 py-1">図解＋理解度チェック</span></div>
+<div class="mt-4 flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-neutral-900 text-white px-3 py-1">55 トピック</span><span class="rounded-full bg-neutral-200 text-neutral-700 px-3 py-1">図解＋理解度チェック</span></div>
 </header>
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">Go / 基礎</h2>
 <div class="grid sm:grid-cols-2 gap-3"><a href="#topic-container" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q3</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">コンテナ / VM / カーネル</h3><p class="text-sm text-neutral-500 mt-1">一軒家 vs シェアハウス・namespace・cgroup</p></a><a href="#topic-goroutine" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q7</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">goroutine と 並行/並列</h3><p class="text-sm text-neutral-500 mt-1">M:N多重化・GOMAXPROCS・CSP・Node比較</p></a><a href="#topic-go-runtime" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">Q7深掘り</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">Goランタイム深掘り</h3><p class="text-sm text-neutral-500 mt-1">netpoller・GMP・AOT/JIT・コアの使われ方・channelの正体</p></a><a href="#topic-execution-model" class="group block rounded-xl border border-violet-200 bg-white p-4 hover:border-violet-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-violet-100 text-violet-700 rounded px-2 py-0.5">実行モデル</span></div><h3 class="mt-2 font-bold group-hover:text-violet-700">Goの実行モデル 全体マップ</h3><p class="text-sm text-neutral-500 mt-1">プロセス/スレッド/goroutine/ランタイム/GC/GMP/コアの全体像</p></a><a href="#topic-go-vs-node" class="group block rounded-xl border border-rose-200 bg-white p-4 hover:border-rose-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-rose-100 text-rose-700 rounded px-2 py-0.5">Go vs Node</span></div><h3 class="mt-2 font-bold group-hover:text-rose-700">Go と Node 実行モデル比較</h3><p class="text-sm text-neutral-500 mt-1">誰がGを渡す・なぜGoだけ複数スレッド・3列比較</p></a><a href="#topic-go-scheduler" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">スケジューラ</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">Goスケジューラの動き</h3><p class="text-sm text-neutral-500 mt-1">Pのローカルキュー・gopark・差し替え・work stealing</p></a><a href="#topic-go-qa" class="group block rounded-xl border border-amber-200 bg-white p-4 hover:border-amber-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-amber-100 text-amber-700 rounded px-2 py-0.5">Q&A集</span></div><h3 class="mt-2 font-bold group-hover:text-amber-700">Go 実行モデル Q&A（疑問集）</h3><p class="text-sm text-neutral-500 mt-1">実際に詰まった質問と答え・自己テスト用details</p></a><a href="#topic-testing" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q4</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">テストを書くメリット</h3><p class="text-sm text-neutral-500 mt-1">table-driven・-race・テストピラミッド</p></a><a href="#topic-cache" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q5</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">RDB / Redis / キャッシュ戦略</h3><p class="text-sm text-neutral-500 mt-1">cache-aside・TTL・thundering herd・index</p></a><a href="#topic-performance" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q6</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">パフォーマンス改善</h3><p class="text-sm text-neutral-500 mt-1">EXPLAIN・offset vs cursor・N+1</p></a><a href="#topic-error-handling" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q8</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">エラーハンドリング</h3><p class="text-sm text-neutral-500 mt-1">if err != nil・%wラップ・panic/recover</p></a><a href="#topic-interface" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q9</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">interface と generics</h3><p class="text-sm text-neutral-500 mt-1">構造的型付け・mock差し替え・generics</p></a><a href="#topic-context" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q10</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">context.Context</h3><p class="text-sm text-neutral-500 mt-1">キャンセル伝播・タイムアウト・リーク事故</p></a><a href="#topic-gc" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q11</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">GC と 低レイテンシ</h3><p class="text-sm text-neutral-500 mt-1">並行GC・p99安定・sync.Pool・言語比較</p></a><a href="#topic-lang-choice" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q12</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">Go / TS / Python の使い分け</h3><p class="text-sm text-neutral-500 mt-1">ワークロード・チーム・運用で選ぶ</p></a></div>
@@ -154,7 +154,7 @@ Check your Browserslist config to be sure that your targets are set up correctly
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">チーム・進め方</h2>
 <div class="grid sm:grid-cols-2 gap-3"><a href="#topic-cost-optimization" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q34</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">コスト最適化の進め方</h3><p class="text-sm text-neutral-500 mt-1">計測で支配項→大きい所から・egress/CDN</p></a><a href="#topic-branch-review" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q35</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">branch戦略・PR粒度・レビュー</h3><p class="text-sm text-neutral-500 mt-1">trunk-based vs git-flow・設計先行</p></a><a href="#topic-first-two-weeks" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Q37</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">最初の2週間で信頼を取る</h3><p class="text-sm text-neutral-500 mt-1">郷に従う→小さく早く貢献・信頼残高</p></a></div>
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">補足知識（Web / アーキ）</h2>
-<div class="grid sm:grid-cols-2 gap-3"><a href="#topic-request-lifecycle" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">リクエストの一生</h3><p class="text-sm text-neutral-500 mt-1">URL入力→DNS→TCP→TLS→LB→サーバ→描画</p></a><a href="#topic-load-balancer" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">ロードバランサ（LB）</h3><p class="text-sm text-neutral-500 mt-1">L4/L7・分散アルゴリズム・ヘルスチェック・TLS終端</p></a><a href="#topic-dns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DNS の仕組み</h3><p class="text-sm text-neutral-500 mt-1">名前解決フロー・レコード種類・TTL/伝播</p></a><a href="#topic-cors" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">CORS と 同一オリジンポリシー</h3><p class="text-sm text-neutral-500 mt-1">SOP・preflight・許可ヘッダ・credentials</p></a><a href="#topic-auth" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">認証と認可</h3><p class="text-sm text-neutral-500 mt-1">OAuth 2.0 / OIDC / JWT・session vs token</p></a><a href="#topic-websocket" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">WebSocket</h3><p class="text-sm text-neutral-500 mt-1">ポーリング/SSE比較・双方向通信・API GW+Lambda実装</p></a><a href="#topic-microservices" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">マイクロサービス</h3><p class="text-sm text-neutral-500 mt-1">モノリス比較・独立デプロイ・SAGA・モノリスファースト</p></a><a href="#topic-opentelemetry" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">可観測性</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">OpenTelemetry</h3><p class="text-sm text-neutral-500 mt-1">3本柱・計装標準・Collector・分散トレース</p></a><a href="#topic-ddd-clean-architecture" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DDD と クリーンアーキテクチャ</h3><p class="text-sm text-neutral-500 mt-1">戦略/戦術・同心円・依存性のルール・Go構成</p></a><a href="#topic-architecture-patterns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">アーキテクチャパターンの比較</h3><p class="text-sm text-neutral-500 mt-1">レイヤード/MVC/ヘキサゴナル/オニオン/クリーン</p></a><a href="#topic-arch-deep-dive-qa" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">アーキ深掘りQ&A（4問）</h3><p class="text-sm text-neutral-500 mt-1">ドメイン/アプリサービス・tx境界・貧血モデル・強整合vs結果整合</p></a><a href="#topic-web-three-tier" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">Web 3層アーキテクチャ</h3><p class="text-sm text-neutral-500 mt-1">Web/App/DB層・AWS実装(VPC/ALB/ECS/Aurora)</p></a><a href="#topic-db-types" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">DB</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">RDBMS / NoSQL / NewSQL と ACID</h3><p class="text-sm text-neutral-500 mt-1">ACID/BASE・NoSQL4分類・ACIDのCとCAPのC</p></a></div>
+<div class="grid sm:grid-cols-2 gap-3"><a href="#topic-request-lifecycle" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">リクエストの一生</h3><p class="text-sm text-neutral-500 mt-1">URL入力→DNS→TCP→TLS→LB→サーバ→描画</p></a><a href="#topic-load-balancer" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">ロードバランサ（LB）</h3><p class="text-sm text-neutral-500 mt-1">L4/L7・分散アルゴリズム・ヘルスチェック・TLS終端</p></a><a href="#topic-dns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DNS の仕組み</h3><p class="text-sm text-neutral-500 mt-1">名前解決フロー・レコード種類・TTL/伝播</p></a><a href="#topic-cors" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">CORS と 同一オリジンポリシー</h3><p class="text-sm text-neutral-500 mt-1">SOP・preflight・許可ヘッダ・credentials</p></a><a href="#topic-auth" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">認証と認可</h3><p class="text-sm text-neutral-500 mt-1">OAuth 2.0 / OIDC / JWT・session vs token</p></a><a href="#topic-websocket" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">Web基礎</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">WebSocket</h3><p class="text-sm text-neutral-500 mt-1">ポーリング/SSE比較・双方向通信・API GW+Lambda実装</p></a><a href="#topic-microservices" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">マイクロサービス</h3><p class="text-sm text-neutral-500 mt-1">モノリス比較・独立デプロイ・SAGA・モノリスファースト</p></a><a href="#topic-opentelemetry" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">可観測性</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">OpenTelemetry</h3><p class="text-sm text-neutral-500 mt-1">3本柱・計装標準・Collector・分散トレース</p></a><a href="#topic-ddd-clean-architecture" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">DDD と クリーンアーキテクチャ</h3><p class="text-sm text-neutral-500 mt-1">戦略/戦術・同心円・依存性のルール・Go構成</p></a><a href="#topic-architecture-patterns" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">アーキテクチャパターンの比較</h3><p class="text-sm text-neutral-500 mt-1">レイヤード/MVC/ヘキサゴナル/オニオン/クリーン</p></a><a href="#topic-arch-deep-dive-qa" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">アーキ深掘りQ&A（4問）</h3><p class="text-sm text-neutral-500 mt-1">ドメイン/アプリサービス・tx境界・貧血モデル・強整合vs結果整合</p></a><a href="#topic-api-grpc-rest-graphql" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">API</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">gRPC / REST / GraphQL の違い</h3><p class="text-sm text-neutral-500 mt-1">通信/データ/契約の比較・使い分け・用語補足</p></a><a href="#topic-web-three-tier" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">アーキ</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">Web 3層アーキテクチャ</h3><p class="text-sm text-neutral-500 mt-1">Web/App/DB層・AWS実装(VPC/ALB/ECS/Aurora)</p></a><a href="#topic-db-types" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">DB</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">RDBMS / NoSQL / NewSQL と ACID</h3><p class="text-sm text-neutral-500 mt-1">ACID/BASE・NoSQL4分類・ACIDのCとCAPのC</p></a></div>
 <h2 class="text-sm font-semibold text-neutral-700 mt-8 mb-2">補足知識（AI Agent）</h2>
 <div class="grid sm:grid-cols-2 gap-3"><a href="#topic-ai-agent" class="group block rounded-xl border border-sky-200 bg-white p-4 hover:border-sky-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-sky-100 text-sky-700 rounded px-2 py-0.5">AI</span></div><h3 class="mt-2 font-bold group-hover:text-sky-700">AI Agent 開発の基礎</h3><p class="text-sm text-neutral-500 mt-1">エージェントループ・tool use・MCP・メモリ・評価</p></a><a href="#topic-agent-frameworks" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">AI</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">エージェントフレームワーク比較</h3><p class="text-sm text-neutral-500 mt-1">Strands / Mastra・設計思想・選び方</p></a><a href="#topic-bedrock-agentcore" class="group block rounded-xl border border-emerald-200 bg-white p-4 hover:border-emerald-400 hover:shadow-sm transition"><div class="flex items-center justify-between"><span class="text-xs font-medium bg-emerald-100 text-emerald-700 rounded px-2 py-0.5">AI×AWS</span></div><h3 class="mt-2 font-bold group-hover:text-emerald-700">Amazon Bedrock AgentCore</h3><p class="text-sm text-neutral-500 mt-1">Runtime/Memory/Identity/Gateway・本番運用</p></a></div>
 </div></section>
@@ -11737,7 +11737,272 @@ func NewMoney(v int) (Money, error) {
     </div>
   </section>
 
-</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-architecture-patterns" class="text-neutral-500 hover:text-neutral-900">‹ アーキテクチャパターンの比較</a><a href="#topic-web-three-tier" class="text-neutral-500 hover:text-neutral-900">Web 3層アーキテクチャ ›</a></nav></section>
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-architecture-patterns" class="text-neutral-500 hover:text-neutral-900">‹ アーキテクチャパターンの比較</a><a href="#topic-api-grpc-rest-graphql" class="text-neutral-500 hover:text-neutral-900">gRPC / REST / GraphQL の違い ›</a></nav></section>
+<section id="topic-api-grpc-rest-graphql" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
+
+  
+
+  <header class="mt-3 mb-10">
+    <p class="text-xs uppercase tracking-widest text-neutral-500">補足知識 / API</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight">gRPC / REST / GraphQL の違い</h1>
+    <p class="mt-3 text-neutral-600">API の作り方（通信スタイル）3種の比較。<span class="font-medium">対立ではなく用途で使い分ける</span>道具。どれを・どこで・なぜ使うかを言えるのがゴール。</p>
+  </header>
+
+  <!-- 30秒サマリ -->
+  <section class="mb-14">
+    <div class="rounded-xl bg-neutral-900 text-neutral-100 p-6 leading-relaxed text-sm">
+      <span class="text-emerald-300 font-medium">REST（HTTP）</span>＝リソースを URL で表し、GET/POST 等の動詞で操作。JSON でやり取り。<span class="font-medium">Web の標準・万能・キャッシュしやすい</span>。<br>
+      <span class="text-sky-300 font-medium">gRPC</span>＝スキーマ（proto）から型付きコードを生成し、HTTP/2 上でバイナリ通信。<span class="font-medium">速い・型安全・双方向ストリーミング</span>。サーバ間（マイクロサービス内部）に強い。<br>
+      <span class="text-violet-300 font-medium">GraphQL</span>＝1つのエンドポイントに「欲しいデータの形」をクエリで指定。<span class="font-medium">過不足なく取れる</span>。画面が複雑なフロント・モバイルに強い。<br>
+      ざっくり＝<span class="text-amber-300 font-medium">外部公開API＝REST/GraphQL、内部のサーバ間＝gRPC、複雑なUIのデータ取得＝GraphQL</span>。
+    </div>
+  </section>
+
+  <!-- 3つを一言で -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">それぞれ何者か</h2>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <div class="text-2xl mb-1">🌐</div>
+        <h3 class="font-bold text-emerald-700">REST（HTTP API）</h3>
+        <p class="text-sm text-neutral-600 mt-2">「リソース」を URL で表現し、HTTP の動詞（GET/POST/PUT/DELETE）で操作する設計スタイル。データは主に JSON。ブラウザ・curl・あらゆる言語からそのまま叩ける。</p>
+        <p class="text-xs text-neutral-500 mt-2">例＝<code class="text-[11px]">GET /users/42</code> でユーザー42を取得。</p>
+      </div>
+      <div class="rounded-xl border border-sky-200 bg-white p-4">
+        <div class="text-2xl mb-1">⚡</div>
+        <h3 class="font-bold text-sky-700">gRPC</h3>
+        <p class="text-sm text-neutral-600 mt-2">先に <code class="text-[11px]">.proto</code> でスキーマ（サービスとメッセージ）を定義し、そこから各言語のクライアント/サーバコードを生成。HTTP/2 上を Protocol Buffers（バイナリ）で通信。</p>
+        <p class="text-xs text-neutral-500 mt-2">例＝<code class="text-[11px]">rpc GetUser(GetUserRequest) returns (User)</code></p>
+      </div>
+      <div class="rounded-xl border border-violet-200 bg-white p-4">
+        <div class="text-2xl mb-1">🎯</div>
+        <h3 class="font-bold text-violet-700">GraphQL</h3>
+        <p class="text-sm text-neutral-600 mt-2">1つのエンドポイントに対し、クライアントが「必要なフィールドだけ」をクエリで指定して取得する。過剰取得・不足取得をなくす。Facebook 発。</p>
+        <p class="text-xs text-neutral-500 mt-2">例＝<code class="text-[11px]">{ user(id:42){ name } }</code> で name だけ取得。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 通信レイヤーの違い -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">中身の違い（通信・データ・契約）</h2>
+    <div class="overflow-hidden rounded-xl border border-neutral-200">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-neutral-100 text-left">
+            <th class="px-3 py-3 font-semibold">観点</th>
+            <th class="px-3 py-3 font-semibold text-emerald-700">REST</th>
+            <th class="px-3 py-3 font-semibold text-sky-700">gRPC</th>
+            <th class="px-3 py-3 font-semibold text-violet-700">GraphQL</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-neutral-100 align-top">
+          <tr><td class="px-3 py-2 font-medium">通信プロトコル</td><td class="px-3 py-2">HTTP/1.1〜（何でも可）</td><td class="px-3 py-2">HTTP/2 前提</td><td class="px-3 py-2">HTTP（多くは POST 1本）</td></tr>
+          <tr class="bg-neutral-50"><td class="px-3 py-2 font-medium">データ形式</td><td class="px-3 py-2">JSON（テキスト）</td><td class="px-3 py-2">Protocol Buffers（バイナリ）</td><td class="px-3 py-2">JSON（テキスト）</td></tr>
+          <tr><td class="px-3 py-2 font-medium">契約（スキーマ）</td><td class="px-3 py-2">任意（OpenAPI で補える）</td><td class="px-3 py-2">必須（.proto）</td><td class="px-3 py-2">必須（GraphQL スキーマ）</td></tr>
+          <tr class="bg-neutral-50"><td class="px-3 py-2 font-medium">エンドポイント</td><td class="px-3 py-2">リソースごとに多数</td><td class="px-3 py-2">メソッドごと</td><td class="px-3 py-2">基本1つ</td></tr>
+          <tr><td class="px-3 py-2 font-medium">コード生成</td><td class="px-3 py-2">任意（OpenAPI 生成）</td><td class="px-3 py-2">標準（proto から生成）</td><td class="px-3 py-2">あり（スキーマから型生成）</td></tr>
+          <tr class="bg-neutral-50"><td class="px-3 py-2 font-medium">ブラウザから直接</td><td class="px-3 py-2">◎ そのまま</td><td class="px-3 py-2">△ gRPC-Web が要る</td><td class="px-3 py-2">◎ そのまま</td></tr>
+          <tr><td class="px-3 py-2 font-medium">キャッシュ</td><td class="px-3 py-2">◎ HTTP標準で効く</td><td class="px-3 py-2">△ 自前</td><td class="px-3 py-2">△ POST中心で効きにくい</td></tr>
+          <tr class="bg-neutral-50"><td class="px-3 py-2 font-medium">ストリーミング</td><td class="px-3 py-2">△ SSE/WebSocket 併用</td><td class="px-3 py-2">◎ 双方向が標準</td><td class="px-3 py-2">○ subscription</td></tr>
+          <tr><td class="px-3 py-2 font-medium">ペイロード効率</td><td class="px-3 py-2">普通</td><td class="px-3 py-2">◎ 小さい・速い</td><td class="px-3 py-2">○ 過不足なし</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-neutral-500 mt-2">◎=得意 / ○=可 / △=工夫が要る。「バイナリで速い gRPC」「標準で扱いやすい REST」「取得を最適化する GraphQL」と覚える。</p>
+  </section>
+
+  <!-- 契約の書き方の対比 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">同じ「ユーザー取得」を3スタイルで</h2>
+    <p class="text-neutral-600 mb-5">見た目の違いを1枚で。</p>
+    <div class="grid md:grid-cols-3 gap-3">
+      <div class="rounded-xl border border-emerald-200 bg-white p-3">
+        <p class="text-xs font-semibold text-emerald-700 mb-2">REST</p>
+        <pre class="bg-neutral-900 text-neutral-100 text-[11px] rounded-lg p-3 overflow-x-auto leading-relaxed">GET /users/42
+
+200 OK
+{
+  "id": 42,
+  "name": "Aya",
+  "email": "..."
+}</pre>
+        <p class="text-[11px] text-neutral-500 mt-2">全部返る（要らない email も付いてくる＝過剰取得）。</p>
+      </div>
+      <div class="rounded-xl border border-sky-200 bg-white p-3">
+        <p class="text-xs font-semibold text-sky-700 mb-2">gRPC（.proto）</p>
+        <pre class="bg-neutral-900 text-neutral-100 text-[11px] rounded-lg p-3 overflow-x-auto leading-relaxed">service UserSvc {
+  rpc GetUser(GetUserReq)
+    returns (User);
+}
+message User {
+  int64 id = 1;
+  string name = 2;
+}</pre>
+        <p class="text-[11px] text-neutral-500 mt-2">スキーマから型付きコードを生成して呼ぶ。</p>
+      </div>
+      <div class="rounded-xl border border-violet-200 bg-white p-3">
+        <p class="text-xs font-semibold text-violet-700 mb-2">GraphQL</p>
+        <pre class="bg-neutral-900 text-neutral-100 text-[11px] rounded-lg p-3 overflow-x-auto leading-relaxed">query {
+  user(id: 42) {
+    name
+  }
+}
+// → { "user":
+//     { "name":"Aya" } }</pre>
+        <p class="text-[11px] text-neutral-500 mt-2">欲しい name だけ指定＝過不足なし。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 通信パターン -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">通信パターン（特に gRPC の強み）</h2>
+    <p class="text-neutral-600 mb-5">gRPC は HTTP/2 のおかげで<span class="font-medium">4種類</span>の通信ができる。ここが REST との大きな差。</p>
+    <div class="grid sm:grid-cols-2 gap-3 text-sm">
+      <div class="rounded-lg border border-neutral-200 bg-white p-3"><p class="font-semibold text-sky-700">Unary（1対1）</p><p class="text-neutral-600 mt-1">リクエスト1・レスポンス1。REST と同じ普通の呼び出し。</p></div>
+      <div class="rounded-lg border border-neutral-200 bg-white p-3"><p class="font-semibold text-sky-700">Server streaming</p><p class="text-neutral-600 mt-1">リクエスト1・レスポンス多。進捗や一覧を少しずつ送る。</p></div>
+      <div class="rounded-lg border border-neutral-200 bg-white p-3"><p class="font-semibold text-sky-700">Client streaming</p><p class="text-neutral-600 mt-1">リクエスト多・レスポンス1。ログや計測を送り続けて最後に結果。</p></div>
+      <div class="rounded-lg border border-neutral-200 bg-white p-3"><p class="font-semibold text-sky-700">Bidirectional（双方向）</p><p class="text-neutral-600 mt-1">両方が同時に送り合う。チャットやリアルタイム同期。</p></div>
+    </div>
+    <p class="text-sm text-neutral-600 mt-3 px-1">REST でリアルタイムをやるなら <span class="font-medium">SSE</span>（サーバ→クライアントの一方向）や <span class="font-medium">WebSocket</span>（双方向）を別途使う。GraphQL の <span class="font-medium">subscription</span> も裏は WebSocket が多い。</p>
+  </section>
+
+  <!-- GraphQL の動機 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">GraphQL が生まれた理由＝過剰/不足取得</h2>
+    <p class="text-neutral-600 mb-5">REST の「1リソース1エンドポイント」だと、画面が複雑になるほど無駄が出る。GraphQL はそれを解く。</p>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="rounded-xl border border-rose-200 bg-white p-4">
+        <h3 class="font-bold text-rose-700 mb-2">REST で起きがちな問題</h3>
+        <ul class="text-sm text-neutral-600 space-y-2 list-disc list-inside">
+          <li><span class="font-medium">過剰取得（over-fetching）</span>＝name だけ欲しいのに全項目返ってくる。</li>
+          <li><span class="font-medium">不足取得（under-fetching）＝ N+1 リクエスト</span>＝ユーザー→その投稿→各投稿のコメント…と、画面を作るのに何回も往復する。</li>
+        </ul>
+      </div>
+      <div class="rounded-xl border border-violet-200 bg-white p-4">
+        <h3 class="font-bold text-violet-700 mb-2">GraphQL の答え</h3>
+        <ul class="text-sm text-neutral-600 space-y-2 list-disc list-inside">
+          <li>クライアントが<span class="font-medium">欲しい形を1クエリで宣言</span>＝過不足なし。</li>
+          <li>関連データ（ユーザー＋投稿＋コメント）を<span class="font-medium">1往復でまとめて取得</span>。</li>
+          <li>代償＝サーバ側が<span class="font-medium">複雑</span>（任意のクエリに応える必要、内部で N+1 が起きやすく <span class="font-medium">DataLoader</span> でまとめる、負荷制御も要る）。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- メリデメ -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">メリット / デメリット</h2>
+    <div class="space-y-3">
+      <div class="rounded-xl border border-emerald-200 bg-white p-4">
+        <h3 class="font-bold text-emerald-700 mb-1">REST</h3>
+        <p class="text-sm text-neutral-600"><span class="font-medium text-emerald-700">✓</span> 標準・学習コスト低・どこからでも叩ける・HTTPキャッシュが効く・エコシステム最大。 <span class="font-medium text-rose-600">✗</span> 過剰/不足取得・エンドポイントが増える・契約が緩い（OpenAPIで補強要）・ストリーミングが弱い。</p>
+      </div>
+      <div class="rounded-xl border border-sky-200 bg-white p-4">
+        <h3 class="font-bold text-sky-700 mb-1">gRPC</h3>
+        <p class="text-sm text-neutral-600"><span class="font-medium text-emerald-700">✓</span> 高速・低帯域（バイナリ）・型安全（生成コード）・双方向ストリーミング・多言語。 <span class="font-medium text-rose-600">✗</span> ブラウザから直接叩けない（gRPC-Web要）・人間が読みにくい・デバッグしにくい・HTTPキャッシュ非対応・学習コスト。</p>
+      </div>
+      <div class="rounded-xl border border-violet-200 bg-white p-4">
+        <h3 class="font-bold text-violet-700 mb-1">GraphQL</h3>
+        <p class="text-sm text-neutral-600"><span class="font-medium text-emerald-700">✓</span> 過不足なく取得・1往復で関連取得・強いスキーマと型・フロント主導で速い。 <span class="font-medium text-rose-600">✗</span> サーバ実装が複雑・N+1対策(DataLoader)・キャッシュしにくい・クエリ負荷制御（深さ/複雑さ制限）が要る。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- どこで何を -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">どこで何を使うか</h2>
+    <p class="text-neutral-600 mb-5">「1つに統一」ではなく<span class="font-medium">レイヤーで混在</span>させるのが実務。</p>
+    <div class="rounded-xl border border-neutral-200 bg-white p-4">
+      <svg viewBox="0 0 620 250" class="w-full">
+        <!-- client -->
+        <rect x="30" y="20" width="200" height="46" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+        <text x="130" y="40" text-anchor="middle" font-size="12" font-weight="700" fill="#5b21b6">ブラウザ / モバイル</text>
+        <text x="130" y="57" text-anchor="middle" font-size="10" fill="#5b21b6">複雑なUIのデータ取得</text>
+        <!-- BFF / API -->
+        <rect x="30" y="102" width="200" height="46" rx="8" fill="#d1fae5" stroke="#059669"/>
+        <text x="130" y="122" text-anchor="middle" font-size="12" font-weight="700" fill="#065f46">API / BFF</text>
+        <text x="130" y="139" text-anchor="middle" font-size="10" fill="#065f46">外部公開の受け口</text>
+        <!-- services -->
+        <rect x="380" y="80" width="210" height="46" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
+        <text x="485" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#075985">内部マイクロサービス群</text>
+        <text x="485" y="117" text-anchor="middle" font-size="10" fill="#075985">サーバ間の高速通信</text>
+        <!-- arrows -->
+        <g stroke="#374151" stroke-width="2" fill="none">
+          <line x1="130" y1="66" x2="130" y2="98" marker-end="url(#s49-a)"/>
+          <line x1="230" y1="120" x2="376" y2="106" marker-end="url(#s49-a)"/>
+        </g>
+        <text x="150" y="86" font-size="11" fill="#7c3aed" font-weight="600">GraphQL / REST</text>
+        <text x="250" y="100" font-size="11" fill="#0284c7" font-weight="600">gRPC</text>
+        <defs><marker id="s49-a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#374151"/></marker></defs>
+      </svg>
+      <ul class="text-sm text-neutral-600 mt-2 space-y-1 list-disc list-inside">
+        <li><span class="font-medium">外部公開API</span>＝REST（万能・キャッシュ）。フロントが多様なデータを欲しがるなら GraphQL。</li>
+        <li><span class="font-medium">内部のサーバ間（マイクロサービス）</span>＝gRPC（速い・型安全・ストリーミング）。</li>
+        <li><span class="font-medium">複雑な画面のモバイル/SPA</span>＝GraphQL（過不足なく1往復）。</li>
+        <li><span class="font-medium">シンプルなCRUD・公開API・とにかく手早く</span>＝REST。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 面接での言い方 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-1">面接での言い方</h2>
+    <div class="rounded-xl border border-emerald-200 bg-emerald-50/50 p-4">
+      <p class="text-sm text-neutral-700 leading-relaxed">「3つは対立ではなく用途で使い分けます。<span class="font-medium">REST</span> は Web の標準でキャッシュも効くので外部公開APIやシンプルなCRUDに。<span class="font-medium">gRPC</span> は proto から型付きコードを生成して HTTP/2 上をバイナリで通信するので速くて型安全、双方向ストリーミングもできるので<span class="font-medium">内部のサーバ間</span>に向きます。<span class="font-medium">GraphQL</span> はクライアントが欲しいデータの形をクエリで指定できるので、過剰取得や N+1 往復が問題になる<span class="font-medium">複雑なフロント・モバイル</span>に効きます。ただ GraphQL はサーバ側が複雑になりキャッシュもしにくいので、要件次第です。実務ではフロントは REST/GraphQL、内部は gRPC、と<span class="font-medium">レイヤーで混在</span>させることが多いです。」</p>
+    </div>
+  </section>
+
+  <!-- 用語補足 -->
+  <section class="mb-14">
+    <h2 class="text-xl font-bold mb-4">用語補足</h2>
+    <div class="rounded-lg border border-amber-200 bg-white p-4">
+      <ul class="text-sm text-neutral-600 space-y-1.5">
+        <li><span class="font-medium text-neutral-800">REST</span>＝Representational State Transfer。リソース指向でHTTPの動詞を使うAPI設計原則。厳密なRESTは希少で、実際は「HTTP+JSONのAPI」を指すことが多い。</li>
+        <li><span class="font-medium text-neutral-800">HTTP/1.1 / HTTP/2 / HTTP/3</span>＝Webの通信規格の世代。HTTP/2 は1本の接続で複数のやり取りを多重化でき（多重化＝multiplexing）、gRPC はこれを前提にする。HTTP/3 は土台が UDP（QUIC）で更に速い。</li>
+        <li><span class="font-medium text-neutral-800">Protocol Buffers（protobuf）</span>＝Google製のバイナリシリアライズ形式＋スキーマ言語。JSONより小さく速い。<code class="text-[11px]">.proto</code> に型を定義しコード生成する。</li>
+        <li><span class="font-medium text-neutral-800">スキーマ / 契約（contract）</span>＝APIの入出力の型の約束事。gRPCは.proto、GraphQLはSDL、RESTはOpenAPIで表す。契約があると型生成・検証・ドキュメント化ができる。</li>
+        <li><span class="font-medium text-neutral-800">OpenAPI（旧Swagger）</span>＝REST APIの仕様をYAML/JSONで書く標準。そこからクライアント/サーバの雛形やドキュメントを生成できる。</li>
+        <li><span class="font-medium text-neutral-800">gRPC-Web</span>＝ブラウザは生のgRPCを話せないため、プロキシ経由でgRPCを使えるようにする仕組み。</li>
+        <li><span class="font-medium text-neutral-800">SSE（Server-Sent Events）</span>＝サーバ→クライアントの一方向の継続配信。通知・進捗向け。WebSocketより軽い。</li>
+        <li><span class="font-medium text-neutral-800">WebSocket</span>＝1本の接続で双方向にメッセージを送り合える規格。チャットやリアルタイム同期に使う。</li>
+        <li><span class="font-medium text-neutral-800">over-fetching / under-fetching</span>＝要らないデータまで取る／足りず何度も取りに行く。GraphQLが解こうとした課題。</li>
+        <li><span class="font-medium text-neutral-800">N+1問題</span>＝一覧1回＋各要素ごとに1回ずつ、で往復やクエリが増える現象。GraphQLでは <span class="font-medium">DataLoader</span> でまとめて解消する。</li>
+        <li><span class="font-medium text-neutral-800">GraphQL の query / mutation / subscription</span>＝取得 / 変更 / 購読（リアルタイム受信）。RESTのGET / POST等に対応する役割分担。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- チェック -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-4">理解度チェック</h2>
+    <p class="text-sm text-neutral-500 mb-4">まず自分で答えてから開く。</p>
+    <div class="space-y-2">
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">1. gRPC が REST より速くなりやすい理由は？</summary>
+        <p class="mt-2 text-sm text-neutral-600">データがバイナリ（Protocol Buffers）でJSONより小さく、HTTP/2 の多重化で接続を使い回せるから。加えてスキーマから生成した型付きコードで無駄が少ない。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">2. GraphQL は何の課題を解くために生まれた？</summary>
+        <p class="mt-2 text-sm text-neutral-600">RESTの過剰取得（要らない項目まで返る）と不足取得（画面を作るのに何度も往復するN+1）。クライアントが欲しい形を1クエリで宣言でき、過不足なく1往復で取れる。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">3. gRPC をブラウザから直接叩けないのはなぜ？どうする？</summary>
+        <p class="mt-2 text-sm text-neutral-600">ブラウザが生のgRPC（HTTP/2のフレーム制御）を扱えないため。gRPC-Web というプロキシ層を挟んで対応する。だから外部公開APIはREST/GraphQL、内部サーバ間はgRPC、と分けることが多い。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">4. GraphQL のデメリットを2つ。</summary>
+        <p class="mt-2 text-sm text-neutral-600">サーバ実装が複雑（任意クエリに応える・内部N+1をDataLoaderで抑える）。HTTPキャッシュが効きにくい（POST1本中心）。加えて重いクエリへの負荷制御（深さ/複雑さ制限）も要る。</p>
+      </details>
+      <details class="rounded-lg border border-neutral-200 bg-white p-4">
+        <summary class="cursor-pointer font-medium">5. 「どれを使う？」に一言で答えるなら？</summary>
+        <p class="mt-2 text-sm text-neutral-600">対立でなく用途。外部公開・シンプルCRUDはREST、内部サーバ間はgRPC、複雑UIのデータ取得はGraphQL。実務ではレイヤーで混在させる。</p>
+      </details>
+    </div>
+  </section>
+
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-arch-deep-dive-qa" class="text-neutral-500 hover:text-neutral-900">‹ アーキ深掘りQ&A（4問）</a><a href="#topic-web-three-tier" class="text-neutral-500 hover:text-neutral-900">Web 3層アーキテクチャ ›</a></nav></section>
 <section id="topic-web-three-tier" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
 
   
@@ -11757,22 +12022,22 @@ func NewMoney(v int) (Money, error) {
         <!-- ユーザー -->
         <text x="310" y="24" text-anchor="middle" font-size="20">🧑‍💻</text>
         <text x="345" y="24" font-size="12" fill="#525252">ユーザー（ブラウザ / アプリ）</text>
-        <line x1="310" y1="34" x2="310" y2="56" stroke="#9ca3af" stroke-width="2" marker-end="url(#s49-t1)"/>
+        <line x1="310" y1="34" x2="310" y2="56" stroke="#9ca3af" stroke-width="2" marker-end="url(#s50-t1)"/>
         <!-- プレゼンテーション層 -->
         <rect x="80" y="60" width="460" height="66" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
         <text x="310" y="87" text-anchor="middle" font-size="14" font-weight="700" fill="#0369a1">① プレゼンテーション層（Web層）</text>
         <text x="310" y="108" text-anchor="middle" font-size="11" fill="#0369a1">ユーザーとの接点。静的配信・リクエストの受付</text>
-        <line x1="310" y1="126" x2="310" y2="150" stroke="#9ca3af" stroke-width="2" marker-end="url(#s49-t1)"/>
+        <line x1="310" y1="126" x2="310" y2="150" stroke="#9ca3af" stroke-width="2" marker-end="url(#s50-t1)"/>
         <!-- アプリケーション層 -->
         <rect x="80" y="154" width="460" height="66" rx="10" fill="#d1fae5" stroke="#059669"/>
         <text x="310" y="181" text-anchor="middle" font-size="14" font-weight="700" fill="#047857">② アプリケーション層（App層）</text>
         <text x="310" y="202" text-anchor="middle" font-size="11" fill="#047857">ビジネスロジックの実行</text>
-        <line x1="310" y1="220" x2="310" y2="244" stroke="#9ca3af" stroke-width="2" marker-end="url(#s49-t1)"/>
+        <line x1="310" y1="220" x2="310" y2="244" stroke="#9ca3af" stroke-width="2" marker-end="url(#s50-t1)"/>
         <!-- データ層 -->
         <rect x="80" y="248" width="460" height="66" rx="10" fill="#e0e7ff" stroke="#4f46e5"/>
         <text x="310" y="275" text-anchor="middle" font-size="14" font-weight="700" fill="#3730a3">③ データ層（DB層）</text>
         <text x="310" y="296" text-anchor="middle" font-size="11" fill="#3730a3">データの永続化</text>
-        <defs><marker id="s49-t1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#9ca3af"/></marker></defs>
+        <defs><marker id="s50-t1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#9ca3af"/></marker></defs>
       </svg>
       <p class="text-sm text-neutral-600 mt-2 px-1">層をまたぐ通信は<span class="font-medium">必ず隣の層と</span>行う（ユーザーがDBを直接触ることはない）。この「一方向に流れる積み木」が3層の基本形。</p>
     </div>
@@ -11877,18 +12142,18 @@ func NewMoney(v int) (Money, error) {
         <text x="555" y="197" text-anchor="middle" font-size="9" font-weight="600" fill="#e11d48">からのみ許可</text>
         <!-- flow arrows -->
         <g stroke="#374151" stroke-width="2.5">
-          <line x1="81" y1="138" x2="108" y2="138" marker-end="url(#s49-v1)"/>
-          <line x1="178" y1="138" x2="200" y2="138" marker-end="url(#s49-v1)"/>
-          <line x1="316" y1="134" x2="352" y2="134" marker-end="url(#s49-v1)"/>
-          <line x1="462" y1="134" x2="498" y2="134" marker-end="url(#s49-v1)"/>
+          <line x1="81" y1="138" x2="108" y2="138" marker-end="url(#s50-v1)"/>
+          <line x1="178" y1="138" x2="200" y2="138" marker-end="url(#s50-v1)"/>
+          <line x1="316" y1="134" x2="352" y2="134" marker-end="url(#s50-v1)"/>
+          <line x1="462" y1="134" x2="498" y2="134" marker-end="url(#s50-v1)"/>
         </g>
         <!-- NAT outbound (dashed) -->
-        <path d="M 380 160 C 360 200, 340 214, 320 218" fill="none" stroke="#ca8a04" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#s49-v2)"/>
+        <path d="M 380 160 C 360 200, 340 214, 320 218" fill="none" stroke="#ca8a04" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#s50-v2)"/>
         <text x="358" y="238" text-anchor="middle" font-size="8.5" fill="#a16207">外向き通信は</text>
         <text x="358" y="250" text-anchor="middle" font-size="8.5" fill="#a16207">NAT経由</text>
         <defs>
-          <marker id="s49-v1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#374151"/></marker>
-          <marker id="s49-v2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ca8a04"/></marker>
+          <marker id="s50-v1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#374151"/></marker>
+          <marker id="s50-v2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ca8a04"/></marker>
         </defs>
       </svg>
       <div class="grid md:grid-cols-2 gap-3 mt-3 text-sm">
@@ -11972,7 +12237,7 @@ func NewMoney(v int) (Money, error) {
     </div>
   </section>
 
-</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-arch-deep-dive-qa" class="text-neutral-500 hover:text-neutral-900">‹ アーキ深掘りQ&A（4問）</a><a href="#topic-db-types" class="text-neutral-500 hover:text-neutral-900">RDBMS / NoSQL / NewSQL と ACID ›</a></nav></section>
+</div><nav class="mx-auto max-w-4xl px-6 pb-14 -mt-2 flex justify-between gap-4 text-sm"><a href="#topic-api-grpc-rest-graphql" class="text-neutral-500 hover:text-neutral-900">‹ gRPC / REST / GraphQL の違い</a><a href="#topic-db-types" class="text-neutral-500 hover:text-neutral-900">RDBMS / NoSQL / NewSQL と ACID ›</a></nav></section>
 <section id="topic-db-types" class="sec topic"><div class="mx-auto max-w-4xl px-6 py-8">
 
   
@@ -12038,24 +12303,24 @@ func NewMoney(v int) (Money, error) {
         <text x="10" y="20" font-size="11" font-weight="600" fill="#047857">✓ 正常</text>
         <rect x="70" y="6" width="150" height="28" rx="6" fill="#d1fae5" stroke="#059669"/>
         <text x="145" y="25" text-anchor="middle" font-size="11" fill="#065f46">A口座 −1万円</text>
-        <line x1="224" y1="20" x2="264" y2="20" stroke="#059669" stroke-width="2" marker-end="url(#s50-ok)"/>
+        <line x1="224" y1="20" x2="264" y2="20" stroke="#059669" stroke-width="2" marker-end="url(#s51-ok)"/>
         <rect x="268" y="6" width="150" height="28" rx="6" fill="#d1fae5" stroke="#059669"/>
         <text x="343" y="25" text-anchor="middle" font-size="11" fill="#065f46">B口座 ＋1万円</text>
-        <line x1="422" y1="20" x2="462" y2="20" stroke="#059669" stroke-width="2" marker-end="url(#s50-ok)"/>
+        <line x1="422" y1="20" x2="462" y2="20" stroke="#059669" stroke-width="2" marker-end="url(#s51-ok)"/>
         <rect x="466" y="6" width="120" height="28" rx="6" fill="#059669"/>
         <text x="526" y="25" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">commit 確定</text>
         <!-- 異常系 -->
         <text x="10" y="80" font-size="11" font-weight="600" fill="#be123c">✗ 途中で落ちた</text>
         <rect x="70" y="66" width="150" height="28" rx="6" fill="#d1fae5" stroke="#059669"/>
         <text x="145" y="85" text-anchor="middle" font-size="11" fill="#065f46">A口座 −1万円</text>
-        <line x1="224" y1="80" x2="264" y2="80" stroke="#e11d48" stroke-width="2" marker-end="url(#s50-ng)"/>
+        <line x1="224" y1="80" x2="264" y2="80" stroke="#e11d48" stroke-width="2" marker-end="url(#s51-ng)"/>
         <rect x="268" y="66" width="150" height="28" rx="6" fill="#ffe4e6" stroke="#e11d48"/>
         <text x="343" y="85" text-anchor="middle" font-size="11" fill="#9f1239">💥 障害で中断</text>
-        <path d="M 340 96 C 300 120, 180 120, 148 98" fill="none" stroke="#e11d48" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#s50-ng)"/>
+        <path d="M 340 96 C 300 120, 180 120, 148 98" fill="none" stroke="#e11d48" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#s51-ng)"/>
         <text x="250" y="126" text-anchor="middle" font-size="11" font-weight="600" fill="#be123c">rollback — 引いた分も無かったことに戻す</text>
         <defs>
-          <marker id="s50-ok" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#059669"/></marker>
-          <marker id="s50-ng" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#e11d48"/></marker>
+          <marker id="s51-ok" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#059669"/></marker>
+          <marker id="s51-ng" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#e11d48"/></marker>
         </defs>
       </svg>
       <p class="text-sm text-neutral-600 mt-2 px-1">「引く」と「足す」を1つのトランザクションに束ねるから、<span class="font-medium">お金が消える・増える中間状態が外に漏れない</span>。これがRDBMSの最大の売り。</p>
@@ -12191,10 +12456,10 @@ func NewMoney(v int) (Money, error) {
         <rect x="230" y="25" width="160" height="60" rx="8" fill="#d1fae5" stroke="#059669"/>
         <text x="310" y="48" text-anchor="middle" font-size="13" font-weight="700" fill="#065f46">NewSQL</text>
         <text x="310" y="66" text-anchor="middle" font-size="10" fill="#065f46">SQL＋ACID＋水平スケール</text>
-        <line x1="199" y1="45" x2="226" y2="50" stroke="#059669" stroke-width="2" marker-end="url(#s50-nw)"/>
-        <line x1="421" y1="45" x2="394" y2="50" stroke="#059669" stroke-width="2" marker-end="url(#s50-nw)"/>
+        <line x1="199" y1="45" x2="226" y2="50" stroke="#059669" stroke-width="2" marker-end="url(#s51-nw)"/>
+        <line x1="421" y1="45" x2="394" y2="50" stroke="#059669" stroke-width="2" marker-end="url(#s51-nw)"/>
         <text x="310" y="112" text-anchor="middle" font-size="10" fill="#047857">両者の間の穴を埋める</text>
-        <defs><marker id="s50-nw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#059669"/></marker></defs>
+        <defs><marker id="s51-nw" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#059669"/></marker></defs>
       </svg>
     </div>
     <div class="grid md:grid-cols-3 gap-4">
@@ -12352,11 +12617,11 @@ func NewMoney(v int) (Money, error) {
         <p class="text-sm text-neutral-600 mb-3">入力に対し1回生成して終わり。外の世界には触れない。</p>
         <svg viewBox="0 0 360 50" class="w-full">
           <rect x="10" y="12" width="90" height="28" rx="6" fill="#e5e7eb" stroke="#6b7280"/><text x="55" y="30" text-anchor="middle" font-size="11" fill="#374151">質問</text>
-          <line x1="102" y1="26" x2="150" y2="26" stroke="#6b7280" stroke-width="2" marker-end="url(#s51-ag)"/>
+          <line x1="102" y1="26" x2="150" y2="26" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-ag)"/>
           <rect x="152" y="12" width="90" height="28" rx="6" fill="#ede9fe" stroke="#7c3aed"/><text x="197" y="30" text-anchor="middle" font-size="11" fill="#5b21b6">LLM 生成</text>
-          <line x1="244" y1="26" x2="292" y2="26" stroke="#6b7280" stroke-width="2" marker-end="url(#s51-ag)"/>
+          <line x1="244" y1="26" x2="292" y2="26" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-ag)"/>
           <rect x="294" y="12" width="56" height="28" rx="6" fill="#e5e7eb" stroke="#6b7280"/><text x="322" y="30" text-anchor="middle" font-size="11" fill="#374151">回答</text>
-          <defs><marker id="s51-ag" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker></defs>
+          <defs><marker id="s52-ag" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker></defs>
         </svg>
       </div>
       <div class="rounded-xl border border-violet-200 bg-white p-4">
@@ -12364,11 +12629,11 @@ func NewMoney(v int) (Money, error) {
         <p class="text-sm text-neutral-600 mb-3">目標を渡すと、道具を使いながら完了まで自分で回す。</p>
         <svg viewBox="0 0 360 50" class="w-full">
           <rect x="10" y="12" width="80" height="28" rx="6" fill="#e5e7eb" stroke="#6b7280"/><text x="50" y="30" text-anchor="middle" font-size="11" fill="#374151">目標</text>
-          <line x1="92" y1="26" x2="128" y2="26" stroke="#6b7280" stroke-width="2" marker-end="url(#s51-ag2)"/>
+          <line x1="92" y1="26" x2="128" y2="26" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-ag2)"/>
           <rect x="130" y="8" width="150" height="36" rx="8" fill="#ede9fe" stroke="#7c3aed"/><text x="205" y="26" text-anchor="middle" font-size="11" font-weight="600" fill="#5b21b6">推論⇄ツール⇄観察</text><text x="205" y="39" text-anchor="middle" font-size="9" fill="#7c3aed">🔁 ×Nステップ</text>
-          <line x1="282" y1="26" x2="316" y2="26" stroke="#6b7280" stroke-width="2" marker-end="url(#s51-ag2)"/>
+          <line x1="282" y1="26" x2="316" y2="26" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-ag2)"/>
           <rect x="318" y="12" width="34" height="28" rx="6" fill="#dcfce7" stroke="#16a34a"/><text x="335" y="30" text-anchor="middle" font-size="11" fill="#166534">完了</text>
-          <defs><marker id="s51-ag2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker></defs>
+          <defs><marker id="s52-ag2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker></defs>
         </svg>
       </div>
     </div>
@@ -12380,35 +12645,35 @@ func NewMoney(v int) (Money, error) {
         <rect x="15" y="95" width="105" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
         <text x="67" y="120" text-anchor="middle" font-size="12" font-weight="600" fill="#0369a1">ユーザー目標</text>
         <text x="67" y="137" text-anchor="middle" font-size="9" fill="#0369a1">「◯◯を調べて直して」</text>
-        <line x1="122" y1="123" x2="163" y2="123" stroke="#6b7280" stroke-width="2" marker-end="url(#s51-al)"/>
+        <line x1="122" y1="123" x2="163" y2="123" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-al)"/>
         <!-- LLM推論 -->
         <rect x="165" y="95" width="120" height="56" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
         <text x="225" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#5b21b6">LLM 推論</text>
         <text x="225" y="136" text-anchor="middle" font-size="9" fill="#7c3aed">次に何をすべきか考える</text>
-        <line x1="287" y1="123" x2="333" y2="123" stroke="#6b7280" stroke-width="2" marker-end="url(#s51-al)"/>
+        <line x1="287" y1="123" x2="333" y2="123" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-al)"/>
         <!-- ツール呼び出し -->
         <rect x="335" y="95" width="120" height="56" rx="8" fill="#fef3c7" stroke="#d97706"/>
         <text x="395" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">ツール呼び出し</text>
         <text x="395" y="136" text-anchor="middle" font-size="9" fill="#b45309">検索・API・コード実行</text>
-        <line x1="457" y1="123" x2="503" y2="123" stroke="#6b7280" stroke-width="2" marker-end="url(#s51-al)"/>
+        <line x1="457" y1="123" x2="503" y2="123" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-al)"/>
         <!-- 結果を観察 -->
         <rect x="505" y="95" width="120" height="56" rx="8" fill="#ccfbf1" stroke="#0d9488"/>
         <text x="565" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#115e59">結果を観察</text>
         <text x="565" y="136" text-anchor="middle" font-size="9" fill="#0f766e">成功/失敗/新情報を読む</text>
         <!-- 判断分岐（下から戻る） -->
-        <path d="M 565 153 L 565 195 L 225 195 L 225 155" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#s51-av)"/>
+        <path d="M 565 153 L 565 195 L 225 195 L 225 155" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#s52-av)"/>
         <text x="395" y="188" text-anchor="middle" font-size="11" font-weight="600" fill="#5b21b6">続行 → コンテキストに結果を積んで、もう一周</text>
         <!-- 完了 -->
-        <path d="M 565 95 L 565 55 L 340 55" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#s51-ae)"/>
+        <path d="M 565 95 L 565 55 L 340 55" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#s52-ae)"/>
         <rect x="240" y="38" width="98" height="34" rx="8" fill="#dcfce7" stroke="#16a34a"/>
         <text x="289" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">完了・報告</text>
         <text x="430" y="48" text-anchor="middle" font-size="10" fill="#16a34a">目標を達成したと判断したら抜ける</text>
         <!-- 上限 -->
         <text x="320" y="235" text-anchor="middle" font-size="10" fill="#9ca3af">※ 最大ステップ数を必ず設ける（無限ループ・暴走防止。後述）</text>
         <defs>
-          <marker id="s51-al" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker>
-          <marker id="s51-av" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/></marker>
-          <marker id="s51-ae" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16a34a"/></marker>
+          <marker id="s52-al" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker>
+          <marker id="s52-av" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/></marker>
+          <marker id="s52-ae" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16a34a"/></marker>
         </defs>
       </svg>
       <p class="text-sm text-neutral-600 mt-2 px-1">この「考える→行動する」を交互に繰り返す型を <span class="font-medium">ReAct（Reasoning + Acting）</span>パターンと呼ぶ。行動の結果（観察）を毎回コンテキストに戻すので、途中で失敗しても軌道修正できるのが単発生成との決定的な差。</p>
@@ -12465,9 +12730,9 @@ func NewMoney(v int) (Money, error) {
         <text x="140" y="164" text-anchor="middle" font-size="9" fill="#4f46e5">ツール一覧の取得・呼び出しを共通化</text>
         <!-- 接続線 -->
         <g stroke="#4f46e5" stroke-width="2">
-          <line x1="242" y1="128" x2="388" y2="55" marker-end="url(#s51-am2)"/>
-          <line x1="242" y1="143" x2="388" y2="128" marker-end="url(#s51-am2)"/>
-          <line x1="242" y1="158" x2="388" y2="175" marker-end="url(#s51-am2)"/>
+          <line x1="242" y1="128" x2="388" y2="55" marker-end="url(#s52-am2)"/>
+          <line x1="242" y1="143" x2="388" y2="128" marker-end="url(#s52-am2)"/>
+          <line x1="242" y1="158" x2="388" y2="175" marker-end="url(#s52-am2)"/>
         </g>
         <text x="315" y="105" text-anchor="middle" font-size="10" font-weight="600" fill="#4f46e5">共通の作法で接続</text>
         <!-- サーバ群 -->
@@ -12482,7 +12747,7 @@ func NewMoney(v int) (Money, error) {
           <text x="505" y="170" text-anchor="middle" font-size="11" font-weight="600" fill="#92400e">MCPサーバ C（例. ファイル操作）</text>
           <text x="505" y="185" text-anchor="middle" font-size="9" fill="#b45309">どのエージェントからも同じ作法で使える</text>
         </g>
-        <defs><marker id="s51-am2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4f46e5"/></marker></defs>
+        <defs><marker id="s52-am2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4f46e5"/></marker></defs>
       </svg>
       <p class="text-sm text-neutral-600 mt-2 px-1">個別実装なら「エージェント数×ツール数」の接続が要るところ、標準を挟むと<span class="font-medium">足し算（N+M）</span>で済む。ツールを作る側は一度MCPサーバにすれば、対応するどのエージェントからも使ってもらえる。</p>
     </div>
@@ -12666,7 +12931,7 @@ func NewMoney(v int) (Money, error) {
         <rect x="15" y="55" width="120" height="44" rx="8" fill="#e0f2fe" stroke="#0284c7"/>
         <text x="75" y="74" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">プロンプト</text>
         <text x="75" y="90" text-anchor="middle" font-size="11" font-weight="600" fill="#0369a1">＋ ツール一覧</text>
-        <line x1="135" y1="77" x2="185" y2="77" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-af1)"/>
+        <line x1="135" y1="77" x2="185" y2="77" stroke="#6b7280" stroke-width="2" marker-end="url(#s53-af1)"/>
         <!-- モデル -->
         <rect x="188" y="45" width="150" height="64" rx="8" fill="#ffedd5" stroke="#ea580c"/>
         <text x="263" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#9a3412">モデル（LLM）</text>
@@ -12676,17 +12941,17 @@ func NewMoney(v int) (Money, error) {
         <text x="475" y="70" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">ツール実行</text>
         <text x="475" y="88" text-anchor="middle" font-size="10" fill="#166534">API・DB・MCPサーバー</text>
         <!-- ループ矢印 -->
-        <path d="M 338 62 C 365 55, 385 55, 408 62" fill="none" stroke="#ea580c" stroke-width="2" marker-end="url(#s52-af2)"/>
+        <path d="M 338 62 C 365 55, 385 55, 408 62" fill="none" stroke="#ea580c" stroke-width="2" marker-end="url(#s53-af2)"/>
         <text x="373" y="48" text-anchor="middle" font-size="10" fill="#c2410c">ツールを呼ぶ</text>
-        <path d="M 408 95 C 385 102, 365 102, 338 95" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#s52-af3)"/>
+        <path d="M 408 95 C 385 102, 365 102, 338 95" fill="none" stroke="#16a34a" stroke-width="2" marker-end="url(#s53-af3)"/>
         <text x="373" y="118" text-anchor="middle" font-size="10" fill="#15803d">結果を返す（繰り返す）</text>
         <!-- 完了 -->
-        <line x1="263" y1="109" x2="263" y2="132" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#s52-af1)"/>
+        <line x1="263" y1="109" x2="263" y2="132" stroke="#6b7280" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#s53-af1)"/>
         <text x="275" y="128" font-size="10" fill="#6b7280">十分と判断したら最終回答</text>
         <defs>
-          <marker id="s52-af1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker>
-          <marker id="s52-af2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ea580c"/></marker>
-          <marker id="s52-af3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16a34a"/></marker>
+          <marker id="s53-af1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker>
+          <marker id="s53-af2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ea580c"/></marker>
+          <marker id="s53-af3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16a34a"/></marker>
         </defs>
       </svg>
       <p class="text-sm text-neutral-600 mt-2 px-1">開発者が書くのは「プロンプト・ツール・モデルの指定」だけ。<span class="font-medium">どのツールをいつ呼ぶかはモデルが決める</span>。これがモデル駆動アプローチ。</p>
@@ -12710,24 +12975,24 @@ func NewMoney(v int) (Money, error) {
       <svg viewBox="0 0 620 140" class="w-full">
         <rect x="15" y="50" width="100" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
         <text x="65" y="74" text-anchor="middle" font-size="11" font-weight="600" fill="#5b21b6">step 1</text>
-        <line x1="115" y1="70" x2="160" y2="70" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-mf1)"/>
+        <line x1="115" y1="70" x2="160" y2="70" stroke="#6b7280" stroke-width="2" marker-end="url(#s53-mf1)"/>
         <text x="137" y="60" text-anchor="middle" font-size="9" fill="#6b7280">.then()</text>
         <rect x="163" y="50" width="100" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
         <text x="213" y="74" text-anchor="middle" font-size="11" font-weight="600" fill="#5b21b6">step 2</text>
-        <line x1="263" y1="70" x2="308" y2="70" stroke="#6b7280" stroke-width="2" marker-end="url(#s52-mf1)"/>
+        <line x1="263" y1="70" x2="308" y2="70" stroke="#6b7280" stroke-width="2" marker-end="url(#s53-mf1)"/>
         <!-- suspend -->
         <rect x="311" y="42" width="140" height="56" rx="8" fill="#fef9c3" stroke="#ca8a04"/>
         <text x="381" y="63" text-anchor="middle" font-size="11" font-weight="700" fill="#854d0e">⏸ suspend</text>
         <text x="381" y="80" text-anchor="middle" font-size="9" fill="#a16207">人の承認・外部入力を待つ</text>
         <text x="381" y="92" text-anchor="middle" font-size="9" fill="#a16207">状態はストレージに保存</text>
-        <line x1="451" y1="70" x2="496" y2="70" stroke="#16a34a" stroke-width="2" marker-end="url(#s52-mf2)"/>
+        <line x1="451" y1="70" x2="496" y2="70" stroke="#16a34a" stroke-width="2" marker-end="url(#s53-mf2)"/>
         <text x="473" y="60" text-anchor="middle" font-size="9" fill="#15803d">resume</text>
         <rect x="499" y="50" width="100" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
         <text x="549" y="74" text-anchor="middle" font-size="11" font-weight="600" fill="#5b21b6">step 3</text>
         <text x="310" y="125" text-anchor="middle" font-size="10" fill="#6b7280">中断は数時間〜無期限でもよい。プロセスが落ちても保存済みの状態から再開できる（human-in-the-loop に必須）</text>
         <defs>
-          <marker id="s52-mf1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker>
-          <marker id="s52-mf2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16a34a"/></marker>
+          <marker id="s53-mf1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#6b7280"/></marker>
+          <marker id="s53-mf2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#16a34a"/></marker>
         </defs>
       </svg>
     </div>
@@ -12919,7 +13184,7 @@ func NewMoney(v int) (Money, error) {
         <rect x="12" y="120" width="100" height="56" rx="8" fill="#f5f5f4" stroke="#78716c"/>
         <text x="62" y="144" text-anchor="middle" font-size="12" font-weight="600" fill="#44403c">利用者 /</text>
         <text x="62" y="162" text-anchor="middle" font-size="12" font-weight="600" fill="#44403c">アプリ</text>
-        <line x1="112" y1="148" x2="136" y2="148" stroke="#78716c" stroke-width="2" marker-end="url(#s53-ag)"/>
+        <line x1="112" y1="148" x2="136" y2="148" stroke="#78716c" stroke-width="2" marker-end="url(#s54-ag)"/>
 
         <!-- Runtime 外枠 -->
         <rect x="140" y="28" width="230" height="240" rx="10" fill="#f0f9ff" stroke="#0284c7"/>
@@ -12953,10 +13218,10 @@ func NewMoney(v int) (Money, error) {
 
         <!-- エージェント → 右側 -->
         <g stroke="#9ca3af" stroke-width="1.5">
-          <line x1="370" y1="105" x2="436" y2="55" marker-end="url(#s53-ag)"/>
-          <line x1="370" y1="130" x2="436" y2="110" marker-end="url(#s53-ag)"/>
-          <line x1="370" y1="160" x2="436" y2="166" marker-end="url(#s53-ag)"/>
-          <line x1="370" y1="185" x2="436" y2="222" marker-end="url(#s53-ag)"/>
+          <line x1="370" y1="105" x2="436" y2="55" marker-end="url(#s54-ag)"/>
+          <line x1="370" y1="130" x2="436" y2="110" marker-end="url(#s54-ag)"/>
+          <line x1="370" y1="160" x2="436" y2="166" marker-end="url(#s54-ag)"/>
+          <line x1="370" y1="185" x2="436" y2="222" marker-end="url(#s54-ag)"/>
         </g>
 
         <!-- Observability -->
@@ -12968,7 +13233,7 @@ func NewMoney(v int) (Money, error) {
           <line x1="532" y1="248" x2="532" y2="290"/>
         </g>
 
-        <defs><marker id="s53-ag" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#9ca3af"/></marker></defs>
+        <defs><marker id="s54-ag" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#9ca3af"/></marker></defs>
       </svg>
       <p class="text-sm text-neutral-600 mt-2 px-1">ポイントは<span class="font-medium">中身（エージェントのコードとモデル）はこちらの自由、周辺（実行・記憶・認証・ツール接続・監視）はマネージド</span>という役割分担。各パーツは独立して採用できるので、たとえば「ホスティングは自前のまま Gateway だけ使う」もできる。</p>
     </div>
